@@ -1,0 +1,104 @@
+2020-02-12 09:13:02.287 [TransportPool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - TransportPool - Thread starvation or clock leap detected (housekeeper delta=9h40m53s777ms624탎100ns).
+2020-02-12 09:40:27.075 [TransportPool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - TransportPool - Thread starvation or clock leap detected (housekeeper delta=6m53s349ms197탎600ns).
+2020-02-12 14:02:32.817 [TransportPool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - TransportPool - Thread starvation or clock leap detected (housekeeper delta=18m1s15ms944탎700ns).
+2020-02-12 16:13:42.276 [http-nio-8181-exec-7] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 7b56b843-6164-4060-b1b4-077dd327d970 request method GET
+2020-02-12 16:13:42.556 [http-nio-8181-exec-7] [7b56b843-6164-4060-b1b4-077dd327d970] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getAllDrivers resource path http://localhost:8182/trspt/api/v1/getAllDrivers
+2020-02-12 16:35:52.691 [http-nio-8181-exec-9] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id d425cbf3-3f3d-41ae-a08d-f13fc0e2ebe3 request method GET
+2020-02-12 16:35:52.691 [http-nio-8181-exec-9] [d425cbf3-3f3d-41ae-a08d-f13fc0e2ebe3] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getAllCustomerOrders resource path http://localhost:8182/trspt/api/v1/getAllCustomerOrders
+2020-02-12 16:36:08.631 [http-nio-8181-exec-1] [31f8ed91-1a01-4a76-949f-b0eacdca4f77] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id fc53e94b-ae0e-4c2b-97e5-50502012bc2a request method POST
+2020-02-12 16:36:08.635 [http-nio-8181-exec-1] [fc53e94b-ae0e-4c2b-97e5-50502012bc2a] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/customer/login resource path http://localhost:8182/trspt/api/v1/customer/login
+2020-02-12 16:36:20.898 [http-nio-8181-exec-1] [fc53e94b-ae0e-4c2b-97e5-50502012bc2a] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2020-02-12 16:36:21.972 [http-nio-8181-exec-1] [fc53e94b-ae0e-4c2b-97e5-50502012bc2a] INFO  o.t.t.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2020-02-12 16:36:21.972 [http-nio-8181-exec-1] [fc53e94b-ae0e-4c2b-97e5-50502012bc2a] INFO  o.t.t.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2020-02-12 16:36:21.976 [http-nio-8181-exec-1] [fc53e94b-ae0e-4c2b-97e5-50502012bc2a] INFO  o.t.m.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2020-02-12 16:36:21.976 [http-nio-8181-exec-1] [fc53e94b-ae0e-4c2b-97e5-50502012bc2a] INFO  o.t.m.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2020-02-12 16:36:22.089 [http-nio-8181-exec-1] [fc53e94b-ae0e-4c2b-97e5-50502012bc2a] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2020-02-12 16:36:22.089 [http-nio-8181-exec-1] [fc53e94b-ae0e-4c2b-97e5-50502012bc2a] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2020-02-12 16:36:45.961 [http-nio-8181-exec-1] [fc53e94b-ae0e-4c2b-97e5-50502012bc2a] DEBUG c.t.email.service.EmailService - Error occured : Mail server connection failed; nested exception is com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.zoho.in, 25; timeout -1;
+  nested exception is:
+	java.net.ConnectException: Connection timed out: connect. Failed messages: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.zoho.in, 25; timeout -1;
+  nested exception is:
+	java.net.ConnectException: Connection timed out: connect
+2020-02-12 16:36:45.965 [http-nio-8181-exec-1] [fc53e94b-ae0e-4c2b-97e5-50502012bc2a] DEBUG c.t.service.impl.CustomerServiceImpl - Failed to send otp
+2020-02-12 16:36:46.173 [http-nio-8181-exec-1] [fc53e94b-ae0e-4c2b-97e5-50502012bc2a] ERROR c.t.c.advice.TransportControllAdvice - Failed to send otp
+com.transport.exception.SendOTPFailed: Failed to send otp
+	at com.transport.service.impl.CustomerServiceImpl.sendOTP(CustomerServiceImpl.java:134)
+	at com.transport.service.impl.CustomerServiceImpl.loginCustomer(CustomerServiceImpl.java:172)
+	at com.transport.controller.TransportSecurityController.loginCustomer(TransportSecurityController.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:854)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:765)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:115)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-12 16:38:31.282 [http-nio-8181-exec-2] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id f23b446b-aa98-4f14-bd07-2e31cd5892b1 request method GET
+2020-02-12 16:38:31.298 [http-nio-8181-exec-2] [f23b446b-aa98-4f14-bd07-2e31cd5892b1] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getAllCustomerOrders resource path http://localhost:8182/trspt/api/v1/getAllCustomerOrders
+2020-02-12 21:15:39.877 [TransportPool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - TransportPool - Thread starvation or clock leap detected (housekeeper delta=3h30s420ms278탎300ns).

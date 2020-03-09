@@ -1,0 +1,553 @@
+2020-02-28 02:52:07.145 [TransportPool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - TransportPool - Thread starvation or clock leap detected (housekeeper delta=3h30s578ms857탎700ns).
+2020-02-28 09:21:49.673 [TransportPool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - TransportPool - Thread starvation or clock leap detected (housekeeper delta=6h30m1s399ms902탎200ns).
+2020-02-28 09:57:37.691 [TransportPool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - TransportPool - Thread starvation or clock leap detected (housekeeper delta=17m15s568ms454탎900ns).
+2020-02-28 10:02:50.573 [http-nio-8181-exec-7] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id d6d9d236-861b-4fe1-b332-ecf42f4b149d request method GET
+2020-02-28 10:02:50.641 [http-nio-8181-exec-7] [d6d9d236-861b-4fe1-b332-ecf42f4b149d] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getAllCustomerOrders resource path http://localhost:8182/trspt/api/v1/getAllCustomerOrders
+2020-02-28 10:04:10.587 [http-nio-8181-exec-9] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id ebb49c13-48fc-4e9e-9b61-5de569cebd8b request method GET
+2020-02-28 10:04:10.588 [http-nio-8181-exec-9] [ebb49c13-48fc-4e9e-9b61-5de569cebd8b] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getAllCustomerOrders resource path http://localhost:8182/trspt/api/v1/getAllCustomerOrders
+2020-02-28 10:04:15.427 [http-nio-8181-exec-9] [ebb49c13-48fc-4e9e-9b61-5de569cebd8b] ERROR c.t.filter.TransportSecurityFilter - Failed to connect to localhost/0:0:0:0:0:0:0:1:8182
+java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:8182
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at com.transport.filter.TransportSecurityFilter.get(TransportSecurityFilter.java:229)
+	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:127)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+	... 53 common frames omitted
+2020-02-28 10:04:15.545 [http-nio-8181-exec-9] [ebb49c13-48fc-4e9e-9b61-5de569cebd8b] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
+2020-02-28 10:04:15.545 [http-nio-8181-exec-9] [ebb49c13-48fc-4e9e-9b61-5de569cebd8b] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
+2020-02-28 10:04:35.566 [http-nio-8181-exec-1] [e6a89328-954a-4947-9eac-4078cfbd7600] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id efd3df6f-14d6-4c7e-afde-cf94a44674ff request method GET
+2020-02-28 10:04:35.601 [http-nio-8181-exec-1] [efd3df6f-14d6-4c7e-afde-cf94a44674ff] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getAllCustomerOrders resource path http://localhost:8182/trspt/api/v1/getAllCustomerOrders
+2020-02-28 11:16:49.089 [http-nio-8181-exec-3] [f2d28714-6a80-40e9-a4b2-4849065ddaca] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id dabd4d5a-88fd-41e9-86ef-f8705335374f request method POST
+2020-02-28 11:16:49.163 [http-nio-8181-exec-3] [dabd4d5a-88fd-41e9-86ef-f8705335374f] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/saveQuote resource path http://localhost:8182/trspt/api/v1/saveQuote
+2020-02-28 11:17:33.904 [http-nio-8181-exec-5] [96d42c9f-7508-40b9-ac92-a2362b32b9ad] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id d7bb8b40-3314-4a93-8d0b-a46ac0a5e92a request method GET
+2020-02-28 11:17:33.904 [http-nio-8181-exec-5] [d7bb8b40-3314-4a93-8d0b-a46ac0a5e92a] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getQuotes resource path http://localhost:8182/trspt/api/v1/getQuotes
+2020-02-28 11:21:41.265 [http-nio-8181-exec-7] [d6d9d236-861b-4fe1-b332-ecf42f4b149d] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id c9cff787-77ad-40f6-9656-3a3faea0ef64 request method POST
+2020-02-28 11:21:41.266 [http-nio-8181-exec-7] [c9cff787-77ad-40f6-9656-3a3faea0ef64] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/placeBid resource path http://localhost:8182/trspt/api/v1/placeBid
+2020-02-28 11:22:12.995 [http-nio-8181-exec-8] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 5faedf15-d4c7-40ef-aafe-4415af3e8db9 request method GET
+2020-02-28 11:22:12.997 [http-nio-8181-exec-8] [5faedf15-d4c7-40ef-aafe-4415af3e8db9] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getQuotesByUser resource path http://localhost:8182/trspt/api/v1/getQuotesByUser
+2020-02-28 11:22:36.348 [http-nio-8181-exec-9] [ebb49c13-48fc-4e9e-9b61-5de569cebd8b] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 49f59401-6cf4-4ee3-af30-b0e4b2e0677c request method GET
+2020-02-28 11:22:36.349 [http-nio-8181-exec-9] [49f59401-6cf4-4ee3-af30-b0e4b2e0677c] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getBidsByQuoteId/10tFD52E5sMG resource path http://localhost:8182/trspt/api/v1/getBidsByQuoteId/10tFD52E5sMG
+2020-02-28 11:26:59.151 [http-nio-8181-exec-1] [efd3df6f-14d6-4c7e-afde-cf94a44674ff] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 07048ce4-f6c7-4975-8822-6fb9814a5def request method POST
+2020-02-28 11:26:59.152 [http-nio-8181-exec-1] [07048ce4-f6c7-4975-8822-6fb9814a5def] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/acceptBid resource path http://localhost:8182/trspt/api/v1/acceptBid
+2020-02-28 11:27:39.318 [http-nio-8181-exec-2] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 0604d9d8-9782-4542-9c4c-ec30be20e1f5 request method GET
+2020-02-28 11:27:39.319 [http-nio-8181-exec-2] [0604d9d8-9782-4542-9c4c-ec30be20e1f5] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getAllCustomerOrders resource path http://localhost:8182/trspt/api/v1/getAllCustomerOrders
+2020-02-28 11:28:37.699 [http-nio-8181-exec-3] [dabd4d5a-88fd-41e9-86ef-f8705335374f] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 8d0bb02b-a4de-43c6-bace-66abb5413d89 request method GET
+2020-02-28 11:28:37.707 [http-nio-8181-exec-3] [8d0bb02b-a4de-43c6-bace-66abb5413d89] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getAllCustomerOrders resource path http://localhost:8182/trspt/api/v1/getAllCustomerOrders
+2020-02-28 11:33:29.092 [http-nio-8181-exec-5] [d7bb8b40-3314-4a93-8d0b-a46ac0a5e92a] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 26a489ce-6d62-40f7-8857-b4692222bd43 request method GET
+2020-02-28 11:33:29.093 [http-nio-8181-exec-5] [26a489ce-6d62-40f7-8857-b4692222bd43] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getConfirmOrders resource path http://localhost:8182/trspt/api/v1/getConfirmOrders
+2020-02-28 11:34:47.999 [http-nio-8181-exec-7] [c9cff787-77ad-40f6-9656-3a3faea0ef64] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 4f820046-c7de-472f-bcba-4837687d99fe request method GET
+2020-02-28 11:34:48.000 [http-nio-8181-exec-7] [4f820046-c7de-472f-bcba-4837687d99fe] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getPartnerOrders resource path http://localhost:8182/trspt/api/v1/getPartnerOrders
+2020-02-28 11:34:48.001 [http-nio-8181-exec-7] [4f820046-c7de-472f-bcba-4837687d99fe] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1018
+2020-02-28 11:34:48.001 [http-nio-8181-exec-7] [4f820046-c7de-472f-bcba-4837687d99fe] DEBUG c.t.filter.TransportSecurityFilter - error MessageUser id or role is required ! please try again
+2020-02-28 11:35:10.213 [http-nio-8181-exec-8] [5faedf15-d4c7-40ef-aafe-4415af3e8db9] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id efc36710-1305-489a-9ba9-46547fb1c049 request method GET
+2020-02-28 11:35:10.233 [http-nio-8181-exec-8] [efc36710-1305-489a-9ba9-46547fb1c049] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getPartnerOrders resource path http://localhost:8182/trspt/api/v1/getPartnerOrders
+2020-02-28 11:35:57.617 [http-nio-8181-exec-9] [49f59401-6cf4-4ee3-af30-b0e4b2e0677c] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id efed83df-438d-4442-9365-878f1762d3de request method POST
+2020-02-28 11:35:57.647 [http-nio-8181-exec-9] [efed83df-438d-4442-9365-878f1762d3de] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/transitRequest resource path http://localhost:8182/trspt/api/v1/transitRequest
+2020-02-28 11:35:57.647 [http-nio-8181-exec-9] [efed83df-438d-4442-9365-878f1762d3de] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1018
+2020-02-28 11:35:57.648 [http-nio-8181-exec-9] [efed83df-438d-4442-9365-878f1762d3de] DEBUG c.t.filter.TransportSecurityFilter - error MessageUser id or role is required ! please try again
+2020-02-28 11:36:23.553 [http-nio-8181-exec-10] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id d6194b4c-1033-42d5-a55c-78a626f69472 request method POST
+2020-02-28 11:36:23.554 [http-nio-8181-exec-10] [d6194b4c-1033-42d5-a55c-78a626f69472] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/transitRequest resource path http://localhost:8182/trspt/api/v1/transitRequest
+2020-02-28 11:36:23.554 [http-nio-8181-exec-10] [d6194b4c-1033-42d5-a55c-78a626f69472] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1018
+2020-02-28 11:36:23.554 [http-nio-8181-exec-10] [d6194b4c-1033-42d5-a55c-78a626f69472] DEBUG c.t.filter.TransportSecurityFilter - error MessageUser id or role is required ! please try again
+2020-02-28 11:36:34.046 [http-nio-8181-exec-1] [07048ce4-f6c7-4975-8822-6fb9814a5def] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 316a1e6a-36a6-4495-bffc-05e3ce0004b8 request method POST
+2020-02-28 11:36:34.046 [http-nio-8181-exec-1] [316a1e6a-36a6-4495-bffc-05e3ce0004b8] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/transitRequest resource path http://localhost:8182/trspt/api/v1/transitRequest
+2020-02-28 11:40:12.484 [http-nio-8181-exec-3] [8d0bb02b-a4de-43c6-bace-66abb5413d89] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id d3dd1f9f-a415-4fa6-a597-f9878fe87e70 request method POST
+2020-02-28 11:40:12.484 [http-nio-8181-exec-3] [d3dd1f9f-a415-4fa6-a597-f9878fe87e70] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/transitRequest resource path http://localhost:8182/trspt/api/v1/transitRequest
+2020-02-28 11:41:32.653 [http-nio-8181-exec-5] [26a489ce-6d62-40f7-8857-b4692222bd43] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 85e35ea9-6ee4-4a67-b9cb-226317b6dc76 request method POST
+2020-02-28 11:41:32.653 [http-nio-8181-exec-5] [85e35ea9-6ee4-4a67-b9cb-226317b6dc76] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/confirmTransitRequest resource path http://localhost:8182/trspt/api/v1/confirmTransitRequest
+2020-02-28 11:41:32.678 [http-nio-8181-exec-5] [85e35ea9-6ee4-4a67-b9cb-226317b6dc76] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1018
+2020-02-28 11:41:32.678 [http-nio-8181-exec-5] [85e35ea9-6ee4-4a67-b9cb-226317b6dc76] DEBUG c.t.filter.TransportSecurityFilter - error MessageUser id or role is required ! please try again
+2020-02-28 11:42:00.299 [http-nio-8181-exec-6] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id fa354d35-168c-4045-b0a0-e4cd7b8ee48a request method POST
+2020-02-28 11:42:00.299 [http-nio-8181-exec-6] [fa354d35-168c-4045-b0a0-e4cd7b8ee48a] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/confirmTransitRequest resource path http://localhost:8182/trspt/api/v1/confirmTransitRequest
+2020-02-28 11:42:09.930 [http-nio-8181-exec-7] [4f820046-c7de-472f-bcba-4837687d99fe] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 1a356e73-13a0-4f3f-8977-b29ecc08a620 request method GET
+2020-02-28 11:42:09.930 [http-nio-8181-exec-7] [1a356e73-13a0-4f3f-8977-b29ecc08a620] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getPartnerOrders resource path http://localhost:8182/trspt/api/v1/getPartnerOrders
+2020-02-28 11:42:19.365 [http-nio-8181-exec-8] [efc36710-1305-489a-9ba9-46547fb1c049] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 5e890bbc-9f39-4ebf-9e61-53bbc3f9f513 request method GET
+2020-02-28 11:42:19.365 [http-nio-8181-exec-8] [5e890bbc-9f39-4ebf-9e61-53bbc3f9f513] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getAllCustomerOrders resource path http://localhost:8182/trspt/api/v1/getAllCustomerOrders
+2020-02-28 11:44:54.715 [http-nio-8181-exec-10] [d6194b4c-1033-42d5-a55c-78a626f69472] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 19cb5ad6-a514-418b-a8e4-ba40edb22ba5 request method POST
+2020-02-28 11:44:54.715 [http-nio-8181-exec-10] [19cb5ad6-a514-418b-a8e4-ba40edb22ba5] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/completeOrder resource path http://localhost:8182/trspt/api/v1/completeOrder
+2020-02-28 11:44:54.715 [http-nio-8181-exec-10] [19cb5ad6-a514-418b-a8e4-ba40edb22ba5] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1018
+2020-02-28 11:44:54.715 [http-nio-8181-exec-10] [19cb5ad6-a514-418b-a8e4-ba40edb22ba5] DEBUG c.t.filter.TransportSecurityFilter - error MessageUser id or role is required ! please try again
+2020-02-28 11:47:06.666 [http-nio-8181-exec-2] [0604d9d8-9782-4542-9c4c-ec30be20e1f5] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 5094fcd8-5277-4efa-829a-d3e899d85b20 request method POST
+2020-02-28 11:47:06.670 [http-nio-8181-exec-2] [5094fcd8-5277-4efa-829a-d3e899d85b20] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/completeOrder resource path http://localhost:8182/trspt/api/v1/completeOrder
+2020-02-28 11:47:16.768 [http-nio-8181-exec-2] [5094fcd8-5277-4efa-829a-d3e899d85b20] ERROR c.t.filter.TransportSecurityFilter - Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at okio.Okio$2.read(Okio.java:140)
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.java:355)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at com.transport.filter.TransportSecurityFilter.post(TransportSecurityFilter.java:257)
+	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:131)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-28 11:47:16.772 [http-nio-8181-exec-2] [5094fcd8-5277-4efa-829a-d3e899d85b20] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
+2020-02-28 11:47:16.772 [http-nio-8181-exec-2] [5094fcd8-5277-4efa-829a-d3e899d85b20] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
+2020-02-28 11:57:46.628 [http-nio-8181-exec-4] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 801f023d-7679-4848-a3c4-92da71ed2102 request method GET
+2020-02-28 11:57:46.632 [http-nio-8181-exec-4] [801f023d-7679-4848-a3c4-92da71ed2102] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getAllCustomerOrders resource path http://localhost:8182/trspt/api/v1/getAllCustomerOrders
+2020-02-28 11:57:50.716 [http-nio-8181-exec-4] [801f023d-7679-4848-a3c4-92da71ed2102] ERROR c.t.filter.TransportSecurityFilter - Failed to connect to localhost/0:0:0:0:0:0:0:1:8182
+java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:8182
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at com.transport.filter.TransportSecurityFilter.get(TransportSecurityFilter.java:229)
+	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:127)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+	... 53 common frames omitted
+2020-02-28 11:57:50.724 [http-nio-8181-exec-4] [801f023d-7679-4848-a3c4-92da71ed2102] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
+2020-02-28 11:57:50.724 [http-nio-8181-exec-4] [801f023d-7679-4848-a3c4-92da71ed2102] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
+2020-02-28 11:58:04.285 [http-nio-8181-exec-5] [85e35ea9-6ee4-4a67-b9cb-226317b6dc76] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 4c043d49-ae87-4244-9a0f-95769cf488e4 request method GET
+2020-02-28 11:58:04.305 [http-nio-8181-exec-5] [4c043d49-ae87-4244-9a0f-95769cf488e4] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getAllCustomerOrders resource path http://localhost:8182/trspt/api/v1/getAllCustomerOrders
+2020-02-28 11:58:08.337 [http-nio-8181-exec-5] [4c043d49-ae87-4244-9a0f-95769cf488e4] ERROR c.t.filter.TransportSecurityFilter - Failed to connect to localhost/0:0:0:0:0:0:0:1:8182
+java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:8182
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at com.transport.filter.TransportSecurityFilter.get(TransportSecurityFilter.java:229)
+	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:127)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+	... 53 common frames omitted
+2020-02-28 11:58:08.381 [http-nio-8181-exec-5] [4c043d49-ae87-4244-9a0f-95769cf488e4] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
+2020-02-28 11:58:08.385 [http-nio-8181-exec-5] [4c043d49-ae87-4244-9a0f-95769cf488e4] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
+2020-02-28 11:59:38.742 [http-nio-8181-exec-7] [1a356e73-13a0-4f3f-8977-b29ecc08a620] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 309698a2-a6a8-4cff-850e-ef0643ce9710 request method GET
+2020-02-28 11:59:38.742 [http-nio-8181-exec-7] [309698a2-a6a8-4cff-850e-ef0643ce9710] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getAllCustomerOrders resource path http://localhost:8182/trspt/api/v1/getAllCustomerOrders
+2020-02-28 12:00:14.157 [http-nio-8181-exec-8] [5e890bbc-9f39-4ebf-9e61-53bbc3f9f513] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id d8f00f94-a91f-4151-9711-5d53dac9c0ab request method GET
+2020-02-28 12:00:14.157 [http-nio-8181-exec-8] [d8f00f94-a91f-4151-9711-5d53dac9c0ab] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getPartnerOrders resource path http://localhost:8182/trspt/api/v1/getPartnerOrders
+2020-02-28 12:38:31.911 [TransportPool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - TransportPool - Thread starvation or clock leap detected (housekeeper delta=17m53s287ms469탎600ns).
+2020-02-28 12:50:38.502 [http-nio-8181-exec-10] [19cb5ad6-a514-418b-a8e4-ba40edb22ba5] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 3ee8fb8d-414b-4847-9aa9-42943c0893a9 request method POST
+2020-02-28 12:50:38.503 [http-nio-8181-exec-10] [3ee8fb8d-414b-4847-9aa9-42943c0893a9] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getDistance resource path http://localhost:8182/trspt/api/v1/getDistance
+2020-02-28 12:50:47.806 [http-nio-8181-exec-1] [316a1e6a-36a6-4495-bffc-05e3ce0004b8] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id e6066214-6a12-4d68-825e-1b00bf617381 request method POST
+2020-02-28 12:50:47.807 [http-nio-8181-exec-1] [e6066214-6a12-4d68-825e-1b00bf617381] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getDistance resource path http://localhost:8182/trspt/api/v1/getDistance
+2020-02-28 12:51:46.781 [http-nio-8181-exec-3] [d3dd1f9f-a415-4fa6-a597-f9878fe87e70] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 8e25424d-6ce8-4f60-a471-c6d7ccbc4cd6 request method POST
+2020-02-28 12:51:46.781 [http-nio-8181-exec-3] [8e25424d-6ce8-4f60-a471-c6d7ccbc4cd6] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getDistance resource path http://localhost:8182/trspt/api/v1/getDistance
+2020-02-28 12:59:57.444 [http-nio-8181-exec-5] [4c043d49-ae87-4244-9a0f-95769cf488e4] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 59bf589b-ea86-4e51-bfeb-ef0d73346c12 request method POST
+2020-02-28 12:59:57.446 [http-nio-8181-exec-5] [59bf589b-ea86-4e51-bfeb-ef0d73346c12] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getDistance resource path http://localhost:8182/trspt/api/v1/getDistance
+2020-02-28 13:00:08.410 [http-nio-8181-exec-7] [309698a2-a6a8-4cff-850e-ef0643ce9710] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 5cae8bb1-384d-4e88-b12c-d0d05c53c5e6 request method POST
+2020-02-28 13:00:08.410 [http-nio-8181-exec-7] [5cae8bb1-384d-4e88-b12c-d0d05c53c5e6] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getDistance resource path http://localhost:8182/trspt/api/v1/getDistance
+2020-02-28 13:13:00.603 [http-nio-8181-exec-9] [efed83df-438d-4442-9365-878f1762d3de] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 228d4f0b-b25f-4388-92fb-9d8a5de1f612 request method POST
+2020-02-28 13:13:00.604 [http-nio-8181-exec-9] [228d4f0b-b25f-4388-92fb-9d8a5de1f612] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getDistance resource path http://localhost:8182/trspt/api/v1/getDistance
+2020-02-28 13:15:38.637 [http-nio-8181-exec-1] [e6066214-6a12-4d68-825e-1b00bf617381] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 9fd30656-568b-42a6-8b7a-cc1a43fe506d request method POST
+2020-02-28 13:15:38.638 [http-nio-8181-exec-1] [9fd30656-568b-42a6-8b7a-cc1a43fe506d] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getDistance resource path http://localhost:8182/trspt/api/v1/getDistance
+2020-02-28 13:57:55.485 [http-nio-8181-exec-3] [8e25424d-6ce8-4f60-a471-c6d7ccbc4cd6] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id c57bd990-531d-465c-ab40-c9e7a846e012 request method POST
+2020-02-28 13:57:55.487 [http-nio-8181-exec-3] [c57bd990-531d-465c-ab40-c9e7a846e012] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getDistance resource path http://localhost:8182/trspt/api/v1/getDistance
+2020-02-28 13:59:08.359 [http-nio-8181-exec-5] [59bf589b-ea86-4e51-bfeb-ef0d73346c12] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id fc51c049-7bb9-4ca4-9d95-20ab1ee82a57 request method POST
+2020-02-28 13:59:08.359 [http-nio-8181-exec-5] [fc51c049-7bb9-4ca4-9d95-20ab1ee82a57] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getDistance resource path http://localhost:8182/trspt/api/v1/getDistance
+2020-02-28 14:33:32.758 [http-nio-8181-exec-7] [5cae8bb1-384d-4e88-b12c-d0d05c53c5e6] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id c9d3d2d8-8ccf-4261-be24-b5281bdc1f88 request method POST
+2020-02-28 14:33:32.764 [http-nio-8181-exec-7] [c9d3d2d8-8ccf-4261-be24-b5281bdc1f88] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getDistance resource path http://localhost:8182/trspt/api/v1/getDistance
+2020-02-28 14:33:45.392 [http-nio-8181-exec-8] [d8f00f94-a91f-4151-9711-5d53dac9c0ab] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 6c1a2da1-448d-4379-8154-b8bdc7580719 request method POST
+2020-02-28 14:33:45.396 [http-nio-8181-exec-8] [6c1a2da1-448d-4379-8154-b8bdc7580719] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getDistance resource path http://localhost:8182/trspt/api/v1/getDistance
+2020-02-28 15:45:14.792 [TransportPool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - TransportPool - Thread starvation or clock leap detected (housekeeper delta=5m39s77ms393탎700ns).
+2020-02-28 16:34:12.806 [http-nio-8181-exec-10] [3ee8fb8d-414b-4847-9aa9-42943c0893a9] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 13bd5271-23a1-497c-8f7f-0c273f9bc4b6 request method GET
+2020-02-28 16:34:12.834 [http-nio-8181-exec-10] [13bd5271-23a1-497c-8f7f-0c273f9bc4b6] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getQuotesByUser resource path http://localhost:8182/trspt/api/v1/getQuotesByUser
+2020-02-28 16:34:17.247 [http-nio-8181-exec-10] [13bd5271-23a1-497c-8f7f-0c273f9bc4b6] ERROR c.t.filter.TransportSecurityFilter - Failed to connect to localhost/0:0:0:0:0:0:0:1:8182
+java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:8182
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at com.transport.filter.TransportSecurityFilter.get(TransportSecurityFilter.java:229)
+	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:127)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+	... 53 common frames omitted
+2020-02-28 16:34:17.263 [http-nio-8181-exec-10] [13bd5271-23a1-497c-8f7f-0c273f9bc4b6] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
+2020-02-28 16:34:17.263 [http-nio-8181-exec-10] [13bd5271-23a1-497c-8f7f-0c273f9bc4b6] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
+2020-02-28 16:59:32.394 [http-nio-8181-exec-2] [5094fcd8-5277-4efa-829a-d3e899d85b20] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 2bd6dd3f-51b4-4aa8-aa6c-c4845afa231b request method GET
+2020-02-28 16:59:32.494 [http-nio-8181-exec-2] [2bd6dd3f-51b4-4aa8-aa6c-c4845afa231b] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getQuotesByUser resource path http://localhost:8182/trspt/api/v1/getQuotesByUser
+2020-02-28 17:04:01.910 [http-nio-8181-exec-4] [801f023d-7679-4848-a3c4-92da71ed2102] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id bc19c649-edd4-4c10-bd8e-997e9939f144 request method POST
+2020-02-28 17:04:01.926 [http-nio-8181-exec-4] [bc19c649-edd4-4c10-bd8e-997e9939f144] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/saveQuote resource path http://localhost:8182/trspt/api/v1/saveQuote
+2020-02-28 17:04:13.437 [http-nio-8181-exec-5] [fc51c049-7bb9-4ca4-9d95-20ab1ee82a57] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 6e5d62e2-5f5c-49b4-9803-d3f49005d851 request method GET
+2020-02-28 17:04:13.437 [http-nio-8181-exec-5] [6e5d62e2-5f5c-49b4-9803-d3f49005d851] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getQuotesByUser resource path http://localhost:8182/trspt/api/v1/getQuotesByUser
+2020-02-28 17:06:10.493 [http-nio-8181-exec-7] [c9d3d2d8-8ccf-4261-be24-b5281bdc1f88] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 614b6bec-13f7-4f09-a39a-b4917347a1b9 request method GET
+2020-02-28 17:06:10.505 [http-nio-8181-exec-7] [614b6bec-13f7-4f09-a39a-b4917347a1b9] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getQuotesByUser resource path http://localhost:8182/trspt/api/v1/getQuotesByUser
+2020-02-28 17:06:14.625 [http-nio-8181-exec-7] [614b6bec-13f7-4f09-a39a-b4917347a1b9] ERROR c.t.filter.TransportSecurityFilter - Failed to connect to localhost/0:0:0:0:0:0:0:1:8182
+java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:8182
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at com.transport.filter.TransportSecurityFilter.get(TransportSecurityFilter.java:229)
+	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:127)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+	... 53 common frames omitted
+2020-02-28 17:06:14.645 [http-nio-8181-exec-7] [614b6bec-13f7-4f09-a39a-b4917347a1b9] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
+2020-02-28 17:06:14.645 [http-nio-8181-exec-7] [614b6bec-13f7-4f09-a39a-b4917347a1b9] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
+2020-02-28 17:06:30.556 [http-nio-8181-exec-8] [6c1a2da1-448d-4379-8154-b8bdc7580719] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 9a58841e-b391-497c-950e-36a9a052e645 request method GET
+2020-02-28 17:06:30.556 [http-nio-8181-exec-8] [9a58841e-b391-497c-950e-36a9a052e645] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getQuotesByUser resource path http://localhost:8182/trspt/api/v1/getQuotesByUser
+2020-02-28 17:08:30.064 [http-nio-8181-exec-10] [13bd5271-23a1-497c-8f7f-0c273f9bc4b6] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 9808df12-00b2-4440-8c59-31358655f1d3 request method GET
+2020-02-28 17:08:30.064 [http-nio-8181-exec-10] [9808df12-00b2-4440-8c59-31358655f1d3] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getQuotes resource path http://localhost:8182/trspt/api/v1/getQuotes
+2020-02-28 17:09:22.691 [http-nio-8181-exec-1] [9fd30656-568b-42a6-8b7a-cc1a43fe506d] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 939ce094-fc8c-44b2-894b-b7af6f79411f request method POST
+2020-02-28 17:09:22.695 [http-nio-8181-exec-1] [939ce094-fc8c-44b2-894b-b7af6f79411f] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/placeBid resource path http://localhost:8182/trspt/api/v1/placeBid
+2020-02-28 17:09:43.164 [http-nio-8181-exec-2] [2bd6dd3f-51b4-4aa8-aa6c-c4845afa231b] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 2e51e578-7773-4317-b860-665132030ae7 request method GET
+2020-02-28 17:09:43.164 [http-nio-8181-exec-2] [2e51e578-7773-4317-b860-665132030ae7] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getBidsByQuoteId/10JL3hgWgtCU resource path http://localhost:8182/trspt/api/v1/getBidsByQuoteId/10JL3hgWgtCU
+2020-02-28 17:16:08.960 [http-nio-8181-exec-4] [bc19c649-edd4-4c10-bd8e-997e9939f144] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 8b8a4f73-378e-4cba-97eb-1f471d18a33c request method GET
+2020-02-28 17:16:08.964 [http-nio-8181-exec-4] [8b8a4f73-378e-4cba-97eb-1f471d18a33c] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getBidsByQuoteId/10JL3hgWgtCU resource path http://localhost:8182/trspt/api/v1/getBidsByQuoteId/10JL3hgWgtCU
+2020-02-28 17:17:31.225 [http-nio-8181-exec-6] [fa354d35-168c-4045-b0a0-e4cd7b8ee48a] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 7767cddd-4ec9-454b-85d0-62fab14c5bbc request method POST
+2020-02-28 17:17:31.225 [http-nio-8181-exec-6] [7767cddd-4ec9-454b-85d0-62fab14c5bbc] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/acceptBid resource path http://localhost:8182/trspt/api/v1/acceptBid
+2020-02-28 17:18:05.107 [http-nio-8181-exec-7] [614b6bec-13f7-4f09-a39a-b4917347a1b9] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 3b69ba90-11dd-4b12-b1d9-6915f773d69f request method GET
+2020-02-28 17:18:05.107 [http-nio-8181-exec-7] [3b69ba90-11dd-4b12-b1d9-6915f773d69f] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getPartnerOrders resource path http://localhost:8182/trspt/api/v1/getPartnerOrders
+2020-02-28 17:18:35.680 [http-nio-8181-exec-8] [9a58841e-b391-497c-950e-36a9a052e645] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 153b4832-395b-412f-98b5-625384d9d671 request method GET
+2020-02-28 17:18:35.680 [http-nio-8181-exec-8] [153b4832-395b-412f-98b5-625384d9d671] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getPartnerOrders resource path http://localhost:8182/trspt/api/v1/getPartnerOrders
+2020-02-28 17:19:27.586 [http-nio-8181-exec-10] [9808df12-00b2-4440-8c59-31358655f1d3] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id ecd288f3-7498-4121-bf36-31e316b82fc5 request method POST
+2020-02-28 17:19:27.586 [http-nio-8181-exec-10] [ecd288f3-7498-4121-bf36-31e316b82fc5] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/transitRequest resource path http://localhost:8182/trspt/api/v1/transitRequest
+2020-02-28 18:26:11.488 [http-nio-8181-exec-2] [2e51e578-7773-4317-b860-665132030ae7] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 14f9cb0f-66fc-4871-94b1-c0a1fb25883a request method POST
+2020-02-28 18:26:11.510 [http-nio-8181-exec-2] [14f9cb0f-66fc-4871-94b1-c0a1fb25883a] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/confirmTransitRequest resource path http://localhost:8182/trspt/api/v1/confirmTransitRequest
+2020-02-28 18:26:26.386 [http-nio-8181-exec-3] [c57bd990-531d-465c-ab40-c9e7a846e012] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id b0e78c13-3ba3-4bf6-bc00-c6549fce0308 request method GET
+2020-02-28 18:26:26.447 [http-nio-8181-exec-3] [b0e78c13-3ba3-4bf6-bc00-c6549fce0308] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getPartnerOrders resource path http://localhost:8182/trspt/api/v1/getPartnerOrders
+2020-02-28 18:28:12.118 [http-nio-8181-exec-5] [6e5d62e2-5f5c-49b4-9803-d3f49005d851] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id d5981731-91a9-42fe-b0d9-93c657661a53 request method GET
+2020-02-28 18:28:12.118 [http-nio-8181-exec-5] [d5981731-91a9-42fe-b0d9-93c657661a53] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getPartnerOrders resource path http://localhost:8182/trspt/api/v1/getPartnerOrders
+2020-02-28 18:29:20.829 [http-nio-8181-exec-7] [3b69ba90-11dd-4b12-b1d9-6915f773d69f] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 8c95a536-4ad6-4812-92d4-32363a0e0733 request method POST
+2020-02-28 18:29:20.830 [http-nio-8181-exec-7] [8c95a536-4ad6-4812-92d4-32363a0e0733] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/confirmTransitRequest resource path http://localhost:8182/trspt/api/v1/confirmTransitRequest
+2020-02-28 18:30:17.449 [http-nio-8181-exec-8] [153b4832-395b-412f-98b5-625384d9d671] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 865534e7-c271-4335-82e6-f2957135699a request method GET
+2020-02-28 18:30:17.453 [http-nio-8181-exec-8] [865534e7-c271-4335-82e6-f2957135699a] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getQuotesByUser resource path http://localhost:8182/trspt/api/v1/getQuotesByUser
+2020-02-28 18:30:59.211 [http-nio-8181-exec-10] [ecd288f3-7498-4121-bf36-31e316b82fc5] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 6c8f965d-fc14-425c-8839-3c43378da0da request method GET
+2020-02-28 18:30:59.213 [http-nio-8181-exec-10] [6c8f965d-fc14-425c-8839-3c43378da0da] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getAllCustomerOrders resource path http://localhost:8182/trspt/api/v1/getAllCustomerOrders
+2020-02-28 18:32:29.281 [http-nio-8181-exec-2] [14f9cb0f-66fc-4871-94b1-c0a1fb25883a] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id fb361a06-512f-4b89-bb36-18caf001e31e request method GET
+2020-02-28 18:32:29.340 [http-nio-8181-exec-2] [fb361a06-512f-4b89-bb36-18caf001e31e] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getAllCustomerOrders resource path http://localhost:8182/trspt/api/v1/getAllCustomerOrders
+2020-02-28 18:33:20.039 [http-nio-8181-exec-3] [b0e78c13-3ba3-4bf6-bc00-c6549fce0308] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 9200d8db-e2d8-4979-a026-09e1742b1b85 request method POST
+2020-02-28 18:33:20.040 [http-nio-8181-exec-3] [9200d8db-e2d8-4979-a026-09e1742b1b85] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/transitRequest resource path http://localhost:8182/trspt/api/v1/transitRequest
+2020-02-28 21:38:59.168 [TransportPool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - TransportPool - Thread starvation or clock leap detected (housekeeper delta=3h8s860ms92탎700ns).

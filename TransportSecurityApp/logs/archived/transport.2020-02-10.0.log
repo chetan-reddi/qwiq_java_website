@@ -1,0 +1,3 @@
+2020-02-10 09:19:11.686 [TransportPool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - TransportPool - Thread starvation or clock leap detected (housekeeper delta=14h59m45s42ms928µs300ns).
+2020-02-10 11:34:18.761 [TransportPool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - TransportPool - Thread starvation or clock leap detected (housekeeper delta=4m21s566ms80µs100ns).
+2020-02-10 18:26:16.782 [TransportPool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - TransportPool - Thread starvation or clock leap detected (housekeeper delta=22m45s383ms309µs300ns).

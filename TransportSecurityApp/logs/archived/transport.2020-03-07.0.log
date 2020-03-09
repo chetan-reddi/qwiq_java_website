@@ -1,0 +1,1267 @@
+2020-03-07 00:01:22.798 [http-nio-8181-exec-1] [3f93c79f-0116-4c12-baef-7b24ed431343] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 812e63e7-8032-4de5-b677-c0859c46ad6e request method POST
+2020-03-07 00:01:22.814 [http-nio-8181-exec-1] [812e63e7-8032-4de5-b677-c0859c46ad6e] DEBUG c.t.filter.TransportSecurityFilter - userId : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 00:01:22.814 [http-nio-8181-exec-1] [812e63e7-8032-4de5-b677-c0859c46ad6e] DEBUG c.t.filter.TransportSecurityFilter - role : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 00:01:22.814 [http-nio-8181-exec-1] [812e63e7-8032-4de5-b677-c0859c46ad6e] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/confirmOrder resource path http://localhost:8182/trspt/api/v1/confirmOrder
+2020-03-07 00:16:31.527 [http-nio-8181-exec-3] [8ac0448c-a64a-4bc8-8fe9-16bfa2d4b055] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id bde0c859-f409-4e83-b371-ea7659d268af request method POST
+2020-03-07 00:16:31.527 [http-nio-8181-exec-3] [bde0c859-f409-4e83-b371-ea7659d268af] DEBUG c.t.filter.TransportSecurityFilter - userId : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 00:16:31.527 [http-nio-8181-exec-3] [bde0c859-f409-4e83-b371-ea7659d268af] DEBUG c.t.filter.TransportSecurityFilter - role : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 00:16:31.527 [http-nio-8181-exec-3] [bde0c859-f409-4e83-b371-ea7659d268af] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/transitRequest resource path http://localhost:8182/trspt/api/v1/transitRequest
+2020-03-07 00:17:19.624 [http-nio-8181-exec-4] [df570f87-5f6f-484c-9d8a-df59d4283ecb] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id d5b4826c-aae7-458f-ae6f-73ed240ac1f5 request method POST
+2020-03-07 00:17:19.624 [http-nio-8181-exec-4] [d5b4826c-aae7-458f-ae6f-73ed240ac1f5] DEBUG c.t.filter.TransportSecurityFilter - userId : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 00:17:19.624 [http-nio-8181-exec-4] [d5b4826c-aae7-458f-ae6f-73ed240ac1f5] DEBUG c.t.filter.TransportSecurityFilter - role : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 00:17:19.624 [http-nio-8181-exec-4] [d5b4826c-aae7-458f-ae6f-73ed240ac1f5] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/transitRequest resource path http://localhost:8182/trspt/api/v1/transitRequest
+2020-03-07 00:17:29.639 [http-nio-8181-exec-4] [d5b4826c-aae7-458f-ae6f-73ed240ac1f5] ERROR c.t.filter.TransportSecurityFilter - timeout
+java.net.SocketTimeoutException: timeout
+	at okio.Okio$4.newTimeoutException(Okio.java:232)
+	at okio.AsyncTimeout.exit(AsyncTimeout.java:285)
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:241)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.java:355)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at com.transport.filter.TransportSecurityFilter.post(TransportSecurityFilter.java:309)
+	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:159)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at okio.Okio$2.read(Okio.java:140)
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
+	... 55 common frames omitted
+2020-03-07 00:17:29.675 [http-nio-8181-exec-4] [d5b4826c-aae7-458f-ae6f-73ed240ac1f5] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
+2020-03-07 00:17:29.680 [http-nio-8181-exec-4] [d5b4826c-aae7-458f-ae6f-73ed240ac1f5] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
+2020-03-07 00:18:31.889 [http-nio-8181-exec-6] [505f7d2d-6689-4bed-aa9b-3374a46fbdd6] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id aba9a524-3b0f-4f3b-a2c8-c2cda17de3fe request method POST
+2020-03-07 00:18:31.889 [http-nio-8181-exec-6] [aba9a524-3b0f-4f3b-a2c8-c2cda17de3fe] DEBUG c.t.filter.TransportSecurityFilter - userId : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 00:18:31.893 [http-nio-8181-exec-6] [aba9a524-3b0f-4f3b-a2c8-c2cda17de3fe] DEBUG c.t.filter.TransportSecurityFilter - role : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 00:18:31.893 [http-nio-8181-exec-6] [aba9a524-3b0f-4f3b-a2c8-c2cda17de3fe] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/transitRequest resource path http://localhost:8182/trspt/api/v1/transitRequest
+2020-03-07 00:18:41.899 [http-nio-8181-exec-6] [aba9a524-3b0f-4f3b-a2c8-c2cda17de3fe] ERROR c.t.filter.TransportSecurityFilter - timeout
+java.net.SocketTimeoutException: timeout
+	at okio.Okio$4.newTimeoutException(Okio.java:232)
+	at okio.AsyncTimeout.exit(AsyncTimeout.java:285)
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:241)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.java:355)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at com.transport.filter.TransportSecurityFilter.post(TransportSecurityFilter.java:309)
+	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:159)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at okio.Okio$2.read(Okio.java:140)
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
+	... 55 common frames omitted
+2020-03-07 00:18:41.943 [http-nio-8181-exec-6] [aba9a524-3b0f-4f3b-a2c8-c2cda17de3fe] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
+2020-03-07 00:18:41.943 [http-nio-8181-exec-6] [aba9a524-3b0f-4f3b-a2c8-c2cda17de3fe] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
+2020-03-07 00:19:00.442 [http-nio-8181-exec-7] [f46df6f0-a855-49f8-bf25-bd1eeded11e2] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id b2768f47-be22-4594-8c79-370690c7880b request method POST
+2020-03-07 00:19:00.442 [http-nio-8181-exec-7] [b2768f47-be22-4594-8c79-370690c7880b] DEBUG c.t.filter.TransportSecurityFilter - userId : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 00:19:00.444 [http-nio-8181-exec-7] [b2768f47-be22-4594-8c79-370690c7880b] DEBUG c.t.filter.TransportSecurityFilter - role : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 00:19:00.444 [http-nio-8181-exec-7] [b2768f47-be22-4594-8c79-370690c7880b] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/transitRequest resource path http://localhost:8182/trspt/api/v1/transitRequest
+2020-03-07 00:19:10.447 [http-nio-8181-exec-7] [b2768f47-be22-4594-8c79-370690c7880b] ERROR c.t.filter.TransportSecurityFilter - timeout
+java.net.SocketTimeoutException: timeout
+	at okio.Okio$4.newTimeoutException(Okio.java:232)
+	at okio.AsyncTimeout.exit(AsyncTimeout.java:285)
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:241)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.java:355)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at com.transport.filter.TransportSecurityFilter.post(TransportSecurityFilter.java:309)
+	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:159)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at okio.Okio$2.read(Okio.java:140)
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
+	... 55 common frames omitted
+2020-03-07 00:19:10.451 [http-nio-8181-exec-7] [b2768f47-be22-4594-8c79-370690c7880b] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
+2020-03-07 00:19:10.454 [http-nio-8181-exec-7] [b2768f47-be22-4594-8c79-370690c7880b] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
+2020-03-07 00:19:45.793 [http-nio-8181-exec-9] [bbd5d632-e4de-4f1c-8bd7-07b4b6d70fab] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 9cdf9b3f-b1bc-4690-997d-770179b666b5 request method POST
+2020-03-07 00:19:45.797 [http-nio-8181-exec-9] [9cdf9b3f-b1bc-4690-997d-770179b666b5] DEBUG c.t.filter.TransportSecurityFilter - userId : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 00:19:45.797 [http-nio-8181-exec-9] [9cdf9b3f-b1bc-4690-997d-770179b666b5] DEBUG c.t.filter.TransportSecurityFilter - role : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 00:19:45.797 [http-nio-8181-exec-9] [9cdf9b3f-b1bc-4690-997d-770179b666b5] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/transitRequest resource path http://localhost:8182/trspt/api/v1/transitRequest
+2020-03-07 00:19:55.823 [http-nio-8181-exec-9] [9cdf9b3f-b1bc-4690-997d-770179b666b5] ERROR c.t.filter.TransportSecurityFilter - Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at okio.Okio$2.read(Okio.java:140)
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.java:355)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at com.transport.filter.TransportSecurityFilter.post(TransportSecurityFilter.java:309)
+	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:159)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2020-03-07 00:19:55.823 [http-nio-8181-exec-9] [9cdf9b3f-b1bc-4690-997d-770179b666b5] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
+2020-03-07 00:19:55.823 [http-nio-8181-exec-9] [9cdf9b3f-b1bc-4690-997d-770179b666b5] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
+2020-03-07 00:19:59.857 [http-nio-8181-exec-10] [e4601b27-ad62-4f02-b4c8-aed3aad062ba] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id c24fdf0b-fa2b-42a8-8f15-de159e215a0e request method POST
+2020-03-07 00:19:59.857 [http-nio-8181-exec-10] [c24fdf0b-fa2b-42a8-8f15-de159e215a0e] DEBUG c.t.filter.TransportSecurityFilter - userId : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 00:19:59.858 [http-nio-8181-exec-10] [c24fdf0b-fa2b-42a8-8f15-de159e215a0e] DEBUG c.t.filter.TransportSecurityFilter - role : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 00:19:59.858 [http-nio-8181-exec-10] [c24fdf0b-fa2b-42a8-8f15-de159e215a0e] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/transitRequest resource path http://localhost:8182/trspt/api/v1/transitRequest
+2020-03-07 00:20:09.862 [http-nio-8181-exec-10] [c24fdf0b-fa2b-42a8-8f15-de159e215a0e] ERROR c.t.filter.TransportSecurityFilter - timeout
+java.net.SocketTimeoutException: timeout
+	at okio.Okio$4.newTimeoutException(Okio.java:232)
+	at okio.AsyncTimeout.exit(AsyncTimeout.java:285)
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:241)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.java:355)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at com.transport.filter.TransportSecurityFilter.post(TransportSecurityFilter.java:309)
+	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:159)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at okio.Okio$2.read(Okio.java:140)
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
+	... 55 common frames omitted
+2020-03-07 00:20:09.866 [http-nio-8181-exec-10] [c24fdf0b-fa2b-42a8-8f15-de159e215a0e] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
+2020-03-07 00:20:09.866 [http-nio-8181-exec-10] [c24fdf0b-fa2b-42a8-8f15-de159e215a0e] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
+2020-03-07 00:22:15.420 [http-nio-8181-exec-2] [4f74d51a-adaf-4427-a559-3356a6d5115e] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:428)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:684)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2020-03-07 00:25:03.122 [http-nio-8181-exec-5] [900e45d2-07e5-4e5c-a54e-f81be9a30582] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 845e6886-f978-470f-afc7-e3a69eb9be8e request method POST
+2020-03-07 00:25:03.122 [http-nio-8181-exec-5] [845e6886-f978-470f-afc7-e3a69eb9be8e] DEBUG c.t.filter.TransportSecurityFilter - userId : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 00:25:03.122 [http-nio-8181-exec-5] [845e6886-f978-470f-afc7-e3a69eb9be8e] DEBUG c.t.filter.TransportSecurityFilter - role : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 00:25:03.122 [http-nio-8181-exec-5] [845e6886-f978-470f-afc7-e3a69eb9be8e] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/transitRequest resource path http://localhost:8182/trspt/api/v1/transitRequest
+2020-03-07 00:25:07.154 [http-nio-8181-exec-5] [845e6886-f978-470f-afc7-e3a69eb9be8e] ERROR c.t.filter.TransportSecurityFilter - Failed to connect to localhost/0:0:0:0:0:0:0:1:8182
+java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:8182
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at com.transport.filter.TransportSecurityFilter.post(TransportSecurityFilter.java:309)
+	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:159)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+	... 53 common frames omitted
+2020-03-07 00:25:07.154 [http-nio-8181-exec-5] [845e6886-f978-470f-afc7-e3a69eb9be8e] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
+2020-03-07 00:25:07.154 [http-nio-8181-exec-5] [845e6886-f978-470f-afc7-e3a69eb9be8e] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
+2020-03-07 00:25:19.946 [http-nio-8181-exec-6] [aba9a524-3b0f-4f3b-a2c8-c2cda17de3fe] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 60af760c-90a8-4887-8cd5-333fbb78036c request method POST
+2020-03-07 00:25:19.946 [http-nio-8181-exec-6] [60af760c-90a8-4887-8cd5-333fbb78036c] DEBUG c.t.filter.TransportSecurityFilter - userId : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 00:25:19.946 [http-nio-8181-exec-6] [60af760c-90a8-4887-8cd5-333fbb78036c] DEBUG c.t.filter.TransportSecurityFilter - role : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 00:25:19.946 [http-nio-8181-exec-6] [60af760c-90a8-4887-8cd5-333fbb78036c] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/transitRequest resource path http://localhost:8182/trspt/api/v1/transitRequest
+2020-03-07 00:25:29.947 [http-nio-8181-exec-6] [60af760c-90a8-4887-8cd5-333fbb78036c] ERROR c.t.filter.TransportSecurityFilter - Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at okio.Okio$2.read(Okio.java:140)
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.java:355)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at com.transport.filter.TransportSecurityFilter.post(TransportSecurityFilter.java:309)
+	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:159)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2020-03-07 00:25:29.947 [http-nio-8181-exec-6] [60af760c-90a8-4887-8cd5-333fbb78036c] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
+2020-03-07 00:25:29.951 [http-nio-8181-exec-6] [60af760c-90a8-4887-8cd5-333fbb78036c] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
+2020-03-07 00:31:55.343 [main] [] INFO  c.t.TransportSecurityApplication - Starting TransportSecurityApplication on DESKTOP-E99KESB with PID 20200 (C:\Users\CST\Desktop\transport\TransportNew\TransportSecurityApp\bin\main started by CST in C:\Users\CST\Desktop\transport\TransportNew\TransportSecurityApp)
+2020-03-07 00:31:55.351 [main] [] DEBUG c.t.TransportSecurityApplication - Running with Spring Boot v1.5.20.RELEASE, Spring v4.3.23.RELEASE
+2020-03-07 00:31:55.355 [main] [] INFO  c.t.TransportSecurityApplication - The following profiles are active: TEST
+2020-03-07 00:31:55.883 [main] [] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@149e0f5d: startup date [Sat Mar 07 00:31:55 IST 2020]; root of context hierarchy
+2020-03-07 00:31:55.995 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2020-03-07 00:31:58.435 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$bd9b7c17] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-07 00:31:58.514 [main] [] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-07 00:31:58.602 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1903b718] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-07 00:31:59.490 [main] [] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8181 (http)
+2020-03-07 00:31:59.524 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2020-03-07 00:31:59.556 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-07 00:31:59.556 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.39
+2020-03-07 00:31:59.776 [localhost-startStop-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-07 00:31:59.776 [localhost-startStop-1] [] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3893 ms
+2020-03-07 00:32:01.027 [localhost-startStop-1] [] INFO  com.zaxxer.hikari.HikariDataSource - TransportPool - Started.
+2020-03-07 00:32:10.234 [localhost-startStop-1] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-03-07 00:32:10.265 [localhost-startStop-1] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-03-07 00:32:10.389 [localhost-startStop-1] [] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2020-03-07 00:32:10.393 [localhost-startStop-1] [] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-03-07 00:32:10.397 [localhost-startStop-1] [] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2020-03-07 00:32:10.481 [localhost-startStop-1] [] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-07 00:32:10.889 [localhost-startStop-1] [] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-03-07 00:32:11.892 [localhost-startStop-1] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-07 00:32:12.348 [localhost-startStop-1] [] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-03-07 00:32:12.668 [localhost-startStop-1] [] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-07 00:32:12.672 [localhost-startStop-1] [] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2020-03-07 00:32:12.676 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-07 00:32:12.680 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-07 00:32:12.680 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-07 00:32:12.680 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-07 00:32:12.680 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'transportSecurityFilter' to: [/*]
+2020-03-07 00:32:12.720 [localhost-startStop-1] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Initialized.........
+2020-03-07 00:32:14.560 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@149e0f5d: startup date [Sat Mar 07 00:31:55 IST 2020]; root of context hierarchy
+2020-03-07 00:32:14.705 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/addVehicle],methods=[POST],produces=[application/json]}" onto private com.transport.response.VehicleRegResp com.transport.controller.KYCDocsController.addVehicle(com.transport.bean.RegisterVehicle,javax.servlet.http.HttpServletRequest) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.VehicleRegFailed,com.transport.exception.VehicleUploadFailed
+2020-03-07 00:32:14.709 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/uploadFiles],methods=[POST],produces=[application/json]}" onto public com.transport.response.TransportResponse com.transport.controller.KYCDocsController.uploadFile(org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,java.lang.String,javax.servlet.http.HttpServletRequest) throws com.transport.exception.FailedUpdateDocs
+2020-03-07 00:32:14.713 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/uploadDocs],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.KYCDocsController.uploadDocs(com.transport.bean.KYCDetails,javax.servlet.http.HttpServletRequest) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException
+2020-03-07 00:32:14.721 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/driver/register],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.TransportSecurityController.registerDriver(com.transport.model.UserRegistration) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException
+2020-03-07 00:32:14.721 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/forgotPassword],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.TransportSecurityController.forgotPassword(com.transport.bean.ForgotPassword,javax.servlet.http.HttpServletRequest) throws com.transport.exception.InvalidMaildId
+2020-03-07 00:32:14.725 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/customer/login],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.TransportSecurityController.loginCustomer(com.transport.bean.LoginRequest) throws com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.InvalidMaildId,com.transport.exception.LoginFailedException,com.transport.exception.TransportDAOException,com.transport.exception.InvalidAccount,com.transport.exception.SendOTPFailed
+2020-03-07 00:32:14.725 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/resendOTP],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.TransportSecurityController.resendOTP(com.transport.bean.UserOTPReq) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.InvalidMaildId,com.transport.exception.ResendOTPFailed,com.transport.exception.SendOTPFailed
+2020-03-07 00:32:14.729 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/validateCustomerOTP],methods=[POST],produces=[application/json]}" onto private com.transport.response.LoginResult com.transport.controller.TransportSecurityController.validateOTP(com.transport.bean.UserOTPReq) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.InvalidMaildId,com.transport.exception.ResendOTPFailed,com.transport.exception.SendOTPFailed,com.transport.exception.OTPExpiredException,com.transport.exception.InvalidOTP,com.transport.exception.TransportDAOException
+2020-03-07 00:32:14.733 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/setPassword],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.TransportSecurityController.setPassword(com.transport.bean.SetPassword) throws com.transport.exception.PasswordMismatchException
+2020-03-07 00:32:14.733 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/driver/login],methods=[POST],produces=[application/json]}" onto private com.transport.response.DriverLoginResponse com.transport.controller.TransportSecurityController.driverLogin(com.transport.bean.DriverLoginReq) throws com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.InvalidMaildId,com.transport.exception.LoginFailedException,com.transport.exception.TransportDAOException,com.transport.exception.InvalidAccount,com.transport.exception.SendOTPFailed
+2020-03-07 00:32:14.737 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/getDistance],methods=[POST],produces=[application/json]}" onto private com.transport.response.DistanceResp com.transport.controller.TransportSecurityController.getDistance(com.transport.bean.DistanceReq) throws com.transport.exception.InvalidOrderId,java.io.IOException,com.transport.exception.InvalidLocation
+2020-03-07 00:32:14.737 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/getVanDetails],methods=[GET],produces=[application/json]}" onto private com.transport.response.VanDetailsResp com.transport.controller.TransportSecurityController.getVanDetails()
+2020-03-07 00:32:14.737 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/validateDriverOTP],methods=[POST],produces=[application/json]}" onto private com.transport.response.OTPResponse com.transport.controller.TransportSecurityController.validateDriverOTP(com.transport.bean.DriverOTPReq) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.InvalidMaildId,com.transport.exception.TransportDAOException,com.transport.exception.LoginFailedException,com.transport.exception.OTPExpiredException,com.transport.exception.InvalidOTP
+2020-03-07 00:32:14.741 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-07 00:32:14.745 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-07 00:32:14.837 [main] [] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-07 00:32:14.837 [main] [] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-07 00:32:14.881 [main] [] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in transportControllAdvice
+2020-03-07 00:32:14.881 [main] [] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in repositoryRestExceptionHandler
+2020-03-07 00:32:15.057 [main] [] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-07 00:32:15.509 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@149e0f5d: startup date [Sat Mar 07 00:31:55 IST 2020]; root of context hierarchy
+2020-03-07 00:32:15.529 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.deleteItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.support.ETag) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-07 00:32:15.529 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation)
+2020-03-07 00:32:15.529 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-07 00:32:15.533 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-07 00:32:15.533 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResourceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-07 00:32:15.537 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[POST],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.postCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-07 00:32:15.541 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation)
+2020-03-07 00:32:15.541 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-07 00:32:15.541 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[PATCH],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.patchItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException,org.springframework.data.rest.webmvc.ResourceNotFoundException
+2020-03-07 00:32:15.541 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.Resource<?>> org.springframework.data.rest.webmvc.RepositoryEntityController.getItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.http.HttpHeaders) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-07 00:32:15.545 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[PUT],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.putItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-07 00:32:15.549 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReferenceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
+2020-03-07 00:32:15.553 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReferenceId(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String) throws java.lang.Exception
+2020-03-07 00:32:15.557 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}],methods=[PATCH || PUT || POST],consumes=[application/json || application/x-spring-data-compact+json || text/uri-list],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.createPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.http.HttpMethod,org.springframework.hateoas.Resources<java.lang.Object>,java.io.Serializable,java.lang.String) throws java.lang.Exception
+2020-03-07 00:32:15.561 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String) throws java.lang.Exception
+2020-03-07 00:32:15.563 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
+2020-03-07 00:32:15.563 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
+2020-03-07 00:32:15.572 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/x-spring-data-compact+json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.data.rest.webmvc.RepositorySearchController.executeSearchCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.http.HttpHeaders,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler)
+2020-03-07 00:32:15.572 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
+2020-03-07 00:32:15.576 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
+2020-03-07 00:32:15.576 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search/{search}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String)
+2020-03-07 00:32:15.576 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search/{search}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String)
+2020-03-07 00:32:15.580 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.executeSearch(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.http.HttpHeaders)
+2020-03-07 00:32:15.580 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.data.rest.webmvc.RepositorySearchesResource org.springframework.data.rest.webmvc.RepositorySearchController.listSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
+2020-03-07 00:32:15.584 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/ || ],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryController.headForRepositories()
+2020-03-07 00:32:15.584 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/ || ],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositoryController.optionsForRepositories()
+2020-03-07 00:32:15.584 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/ || ],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RepositoryLinksResource> org.springframework.data.rest.webmvc.RepositoryController.listRepositories()
+2020-03-07 00:32:15.592 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile],methods=[GET]}" onto org.springframework.http.HttpEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.ProfileController.listAllFormsOfMetadata()
+2020-03-07 00:32:15.592 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile],methods=[OPTIONS]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.ProfileController.profileOptions()
+2020-03-07 00:32:15.592 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile/{repository}],methods=[GET],produces=[application/alps+json || */*]}" onto org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RootResourceInformation> org.springframework.data.rest.webmvc.alps.AlpsController.descriptor(org.springframework.data.rest.webmvc.RootResourceInformation)
+2020-03-07 00:32:15.596 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile/{repository}],methods=[OPTIONS],produces=[application/alps+json]}" onto org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.alps.AlpsController.alpsOptions()
+2020-03-07 00:32:15.596 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile/{repository}],methods=[GET],produces=[application/schema+json]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.json.JsonSchema> org.springframework.data.rest.webmvc.RepositorySchemaController.schema(org.springframework.data.rest.webmvc.RootResourceInformation)
+2020-03-07 00:32:15.912 [main] [] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-07 00:32:15.912 [main] [] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSourceContextSource' has been autodetected for JMX exposure
+2020-03-07 00:32:15.924 [main] [] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSourceContextSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSourceContextSource,type=HikariDataSource]
+2020-03-07 00:32:15.940 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2020-03-07 00:32:15.956 [main] [] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-03-07 00:32:15.980 [main] [] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8181 (http)
+2020-03-07 00:32:15.988 [main] [] INFO  c.t.TransportSecurityApplication - Started TransportSecurityApplication in 21.323 seconds (JVM running for 23.39)
+2020-03-07 00:33:17.741 [http-nio-8181-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-03-07 00:33:17.741 [http-nio-8181-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-03-07 00:33:17.805 [http-nio-8181-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 62 ms
+2020-03-07 00:33:18.276 [http-nio-8181-exec-1] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 694155bb-0c10-4f5b-b5d1-e4dce9f50449 request method POST
+2020-03-07 00:33:18.280 [http-nio-8181-exec-1] [694155bb-0c10-4f5b-b5d1-e4dce9f50449] DEBUG c.t.filter.TransportSecurityFilter - userId : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 00:33:18.280 [http-nio-8181-exec-1] [694155bb-0c10-4f5b-b5d1-e4dce9f50449] DEBUG c.t.filter.TransportSecurityFilter - role : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 00:33:18.280 [http-nio-8181-exec-1] [694155bb-0c10-4f5b-b5d1-e4dce9f50449] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/confirmOrder resource path http://localhost:8182/trspt/api/v1/confirmOrder
+2020-03-07 00:33:22.359 [http-nio-8181-exec-1] [694155bb-0c10-4f5b-b5d1-e4dce9f50449] ERROR c.t.filter.TransportSecurityFilter - Failed to connect to localhost/0:0:0:0:0:0:0:1:8182
+java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:8182
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at com.transport.filter.TransportSecurityFilter.post(TransportSecurityFilter.java:309)
+	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:159)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+	... 53 common frames omitted
+2020-03-07 00:33:22.363 [http-nio-8181-exec-1] [694155bb-0c10-4f5b-b5d1-e4dce9f50449] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
+2020-03-07 00:33:22.363 [http-nio-8181-exec-1] [694155bb-0c10-4f5b-b5d1-e4dce9f50449] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
+2020-03-07 00:34:46.582 [http-nio-8181-exec-3] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id af8c14d5-7d2c-48f5-bdcc-052cd81c6009 request method POST
+2020-03-07 00:34:46.582 [http-nio-8181-exec-3] [af8c14d5-7d2c-48f5-bdcc-052cd81c6009] DEBUG c.t.filter.TransportSecurityFilter - userId : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 00:34:46.582 [http-nio-8181-exec-3] [af8c14d5-7d2c-48f5-bdcc-052cd81c6009] DEBUG c.t.filter.TransportSecurityFilter - role : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 00:34:46.582 [http-nio-8181-exec-3] [af8c14d5-7d2c-48f5-bdcc-052cd81c6009] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/confirmOrder resource path http://localhost:8182/trspt/api/v1/confirmOrder
+2020-03-07 00:35:04.851 [http-nio-8181-exec-4] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 00bd000d-4292-4f87-a47b-f9666d04317a request method POST
+2020-03-07 00:35:04.855 [http-nio-8181-exec-4] [00bd000d-4292-4f87-a47b-f9666d04317a] DEBUG c.t.filter.TransportSecurityFilter - userId : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 00:35:04.855 [http-nio-8181-exec-4] [00bd000d-4292-4f87-a47b-f9666d04317a] DEBUG c.t.filter.TransportSecurityFilter - role : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 00:35:04.855 [http-nio-8181-exec-4] [00bd000d-4292-4f87-a47b-f9666d04317a] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/confirmOrder resource path http://localhost:8182/trspt/api/v1/confirmOrder
+2020-03-07 00:37:45.918 [http-nio-8181-exec-6] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id cedcf42f-5dc2-4aa3-b1a6-8547dda84f39 request method POST
+2020-03-07 00:37:45.922 [http-nio-8181-exec-6] [cedcf42f-5dc2-4aa3-b1a6-8547dda84f39] DEBUG c.t.filter.TransportSecurityFilter - userId : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 00:37:45.922 [http-nio-8181-exec-6] [cedcf42f-5dc2-4aa3-b1a6-8547dda84f39] DEBUG c.t.filter.TransportSecurityFilter - role : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 00:37:45.922 [http-nio-8181-exec-6] [cedcf42f-5dc2-4aa3-b1a6-8547dda84f39] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/confirmOrder resource path http://localhost:8182/trspt/api/v1/confirmOrder
+2020-03-07 00:37:49.956 [http-nio-8181-exec-6] [cedcf42f-5dc2-4aa3-b1a6-8547dda84f39] ERROR c.t.filter.TransportSecurityFilter - Failed to connect to localhost/0:0:0:0:0:0:0:1:8182
+java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:8182
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at com.transport.filter.TransportSecurityFilter.post(TransportSecurityFilter.java:309)
+	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:159)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+	... 53 common frames omitted
+2020-03-07 00:37:49.956 [http-nio-8181-exec-6] [cedcf42f-5dc2-4aa3-b1a6-8547dda84f39] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
+2020-03-07 00:37:49.956 [http-nio-8181-exec-6] [cedcf42f-5dc2-4aa3-b1a6-8547dda84f39] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
+2020-03-07 00:38:04.471 [http-nio-8181-exec-7] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 2ecfbb96-71ad-4554-b687-8d3976b4011c request method POST
+2020-03-07 00:38:04.475 [http-nio-8181-exec-7] [2ecfbb96-71ad-4554-b687-8d3976b4011c] DEBUG c.t.filter.TransportSecurityFilter - userId : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 00:38:04.475 [http-nio-8181-exec-7] [2ecfbb96-71ad-4554-b687-8d3976b4011c] DEBUG c.t.filter.TransportSecurityFilter - role : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 00:38:04.475 [http-nio-8181-exec-7] [2ecfbb96-71ad-4554-b687-8d3976b4011c] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/confirmOrder resource path http://localhost:8182/trspt/api/v1/confirmOrder
+2020-03-07 00:42:39.573 [http-nio-8181-exec-9] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 00da8634-c690-4088-8b8e-61bf3cbde07f request method POST
+2020-03-07 00:42:39.573 [http-nio-8181-exec-9] [00da8634-c690-4088-8b8e-61bf3cbde07f] DEBUG c.t.filter.TransportSecurityFilter - userId : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 00:42:39.577 [http-nio-8181-exec-9] [00da8634-c690-4088-8b8e-61bf3cbde07f] DEBUG c.t.filter.TransportSecurityFilter - role : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 00:42:39.577 [http-nio-8181-exec-9] [00da8634-c690-4088-8b8e-61bf3cbde07f] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/confirmOrder resource path http://localhost:8182/trspt/api/v1/confirmOrder
+2020-03-07 00:45:12.970 [http-nio-8181-exec-1] [694155bb-0c10-4f5b-b5d1-e4dce9f50449] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 4edbf297-623e-487e-ba2f-deb318df3263 request method POST
+2020-03-07 00:45:12.970 [http-nio-8181-exec-1] [4edbf297-623e-487e-ba2f-deb318df3263] DEBUG c.t.filter.TransportSecurityFilter - userId : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 00:45:12.974 [http-nio-8181-exec-1] [4edbf297-623e-487e-ba2f-deb318df3263] DEBUG c.t.filter.TransportSecurityFilter - role : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 00:45:12.974 [http-nio-8181-exec-1] [4edbf297-623e-487e-ba2f-deb318df3263] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/confirmOrder resource path http://localhost:8182/trspt/api/v1/confirmOrder
+2020-03-07 00:45:54.119 [http-nio-8181-exec-2] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 0f876026-b4a8-4f3f-9532-0d14ea89627f request method POST
+2020-03-07 00:45:54.119 [http-nio-8181-exec-2] [0f876026-b4a8-4f3f-9532-0d14ea89627f] DEBUG c.t.filter.TransportSecurityFilter - userId : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 00:45:54.119 [http-nio-8181-exec-2] [0f876026-b4a8-4f3f-9532-0d14ea89627f] DEBUG c.t.filter.TransportSecurityFilter - role : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 00:45:54.119 [http-nio-8181-exec-2] [0f876026-b4a8-4f3f-9532-0d14ea89627f] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/transitRequest resource path http://localhost:8182/trspt/api/v1/transitRequest
+2020-03-07 00:46:04.123 [http-nio-8181-exec-2] [0f876026-b4a8-4f3f-9532-0d14ea89627f] ERROR c.t.filter.TransportSecurityFilter - Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at okio.Okio$2.read(Okio.java:140)
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.java:355)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at com.transport.filter.TransportSecurityFilter.post(TransportSecurityFilter.java:309)
+	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:159)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2020-03-07 00:46:04.123 [http-nio-8181-exec-2] [0f876026-b4a8-4f3f-9532-0d14ea89627f] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
+2020-03-07 00:46:04.123 [http-nio-8181-exec-2] [0f876026-b4a8-4f3f-9532-0d14ea89627f] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
+2020-03-07 00:47:27.355 [http-nio-8181-exec-4] [00bd000d-4292-4f87-a47b-f9666d04317a] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 4588c520-d055-4980-ae69-c4e6f5b3847b request method POST
+2020-03-07 00:47:27.355 [http-nio-8181-exec-4] [4588c520-d055-4980-ae69-c4e6f5b3847b] DEBUG c.t.filter.TransportSecurityFilter - userId : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 00:47:27.355 [http-nio-8181-exec-4] [4588c520-d055-4980-ae69-c4e6f5b3847b] DEBUG c.t.filter.TransportSecurityFilter - role : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 00:47:27.355 [http-nio-8181-exec-4] [4588c520-d055-4980-ae69-c4e6f5b3847b] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/confirmOrder resource path http://localhost:8182/trspt/api/v1/confirmOrder
+2020-03-07 00:47:39.364 [http-nio-8181-exec-5] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 875f5164-11f9-4264-9187-c047c9e18e3b request method POST
+2020-03-07 00:47:39.364 [http-nio-8181-exec-5] [875f5164-11f9-4264-9187-c047c9e18e3b] DEBUG c.t.filter.TransportSecurityFilter - userId : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 00:47:39.367 [http-nio-8181-exec-5] [875f5164-11f9-4264-9187-c047c9e18e3b] DEBUG c.t.filter.TransportSecurityFilter - role : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 00:47:39.367 [http-nio-8181-exec-5] [875f5164-11f9-4264-9187-c047c9e18e3b] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/confirmOrder resource path http://localhost:8182/trspt/api/v1/confirmOrder
+2020-03-07 00:55:14.847 [TransportPool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - TransportPool - Thread starvation or clock leap detected (housekeeper delta=3m8s585ms860탎200ns).
+2020-03-07 01:06:03.400 [http-nio-8181-exec-7] [2ecfbb96-71ad-4554-b687-8d3976b4011c] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id ea2d822c-1056-491e-8b08-47c60afb3798 request method POST
+2020-03-07 01:06:03.401 [http-nio-8181-exec-7] [ea2d822c-1056-491e-8b08-47c60afb3798] DEBUG c.t.filter.TransportSecurityFilter - userId : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 01:06:03.401 [http-nio-8181-exec-7] [ea2d822c-1056-491e-8b08-47c60afb3798] DEBUG c.t.filter.TransportSecurityFilter - role : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 01:06:03.401 [http-nio-8181-exec-7] [ea2d822c-1056-491e-8b08-47c60afb3798] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/transitRequest resource path http://localhost:8182/trspt/api/v1/transitRequest
+2020-03-07 01:06:13.405 [http-nio-8181-exec-7] [ea2d822c-1056-491e-8b08-47c60afb3798] ERROR c.t.filter.TransportSecurityFilter - Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at okio.Okio$2.read(Okio.java:140)
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.java:355)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at com.transport.filter.TransportSecurityFilter.post(TransportSecurityFilter.java:309)
+	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:159)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2020-03-07 01:06:13.409 [http-nio-8181-exec-7] [ea2d822c-1056-491e-8b08-47c60afb3798] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
+2020-03-07 01:06:13.410 [http-nio-8181-exec-7] [ea2d822c-1056-491e-8b08-47c60afb3798] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
+2020-03-07 04:48:24.565 [TransportPool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - TransportPool - Thread starvation or clock leap detected (housekeeper delta=3h30s632ms332탎500ns).
+2020-03-07 09:36:03.531 [TransportPool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - TransportPool - Thread starvation or clock leap detected (housekeeper delta=4h47m59s296ms640탎500ns).
+2020-03-07 11:48:21.486 [http-nio-8181-exec-9] [00da8634-c690-4088-8b8e-61bf3cbde07f] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 236d8961-b6e8-43ac-92fd-1011152157e1 request method POST
+2020-03-07 11:48:21.517 [http-nio-8181-exec-9] [236d8961-b6e8-43ac-92fd-1011152157e1] DEBUG c.t.filter.TransportSecurityFilter - userId : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 11:48:21.518 [http-nio-8181-exec-9] [236d8961-b6e8-43ac-92fd-1011152157e1] DEBUG c.t.filter.TransportSecurityFilter - role : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 11:48:21.518 [http-nio-8181-exec-9] [236d8961-b6e8-43ac-92fd-1011152157e1] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/confirmOrder resource path http://localhost:8182/trspt/api/v1/confirmOrder
+2020-03-07 11:48:32.583 [http-nio-8181-exec-10] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 647b92e0-e278-4e60-afad-68a15bd1c1e5 request method POST
+2020-03-07 11:48:32.583 [http-nio-8181-exec-10] [647b92e0-e278-4e60-afad-68a15bd1c1e5] DEBUG c.t.filter.TransportSecurityFilter - userId : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 11:48:32.583 [http-nio-8181-exec-10] [647b92e0-e278-4e60-afad-68a15bd1c1e5] DEBUG c.t.filter.TransportSecurityFilter - role : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 11:48:32.583 [http-nio-8181-exec-10] [647b92e0-e278-4e60-afad-68a15bd1c1e5] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/transitRequest resource path http://localhost:8182/trspt/api/v1/transitRequest
+2020-03-07 11:48:42.631 [http-nio-8181-exec-10] [647b92e0-e278-4e60-afad-68a15bd1c1e5] ERROR c.t.filter.TransportSecurityFilter - timeout
+java.net.SocketTimeoutException: timeout
+	at okio.Okio$4.newTimeoutException(Okio.java:232)
+	at okio.AsyncTimeout.exit(AsyncTimeout.java:285)
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:241)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.java:355)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at com.transport.filter.TransportSecurityFilter.post(TransportSecurityFilter.java:309)
+	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:159)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at okio.Okio$2.read(Okio.java:140)
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
+	... 55 common frames omitted
+2020-03-07 11:48:42.635 [http-nio-8181-exec-10] [647b92e0-e278-4e60-afad-68a15bd1c1e5] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
+2020-03-07 11:48:42.636 [http-nio-8181-exec-10] [647b92e0-e278-4e60-afad-68a15bd1c1e5] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
+2020-03-07 11:50:50.526 [http-nio-8181-exec-2] [0f876026-b4a8-4f3f-9532-0d14ea89627f] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 867f7557-8c55-4602-b665-5674c415ec41 request method POST
+2020-03-07 11:50:50.528 [http-nio-8181-exec-2] [867f7557-8c55-4602-b665-5674c415ec41] DEBUG c.t.filter.TransportSecurityFilter - userId : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 11:50:50.528 [http-nio-8181-exec-2] [867f7557-8c55-4602-b665-5674c415ec41] DEBUG c.t.filter.TransportSecurityFilter - role : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 11:50:50.528 [http-nio-8181-exec-2] [867f7557-8c55-4602-b665-5674c415ec41] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/confirmOrder resource path http://localhost:8182/trspt/api/v1/confirmOrder
+2020-03-07 11:51:19.818 [http-nio-8181-exec-3] [af8c14d5-7d2c-48f5-bdcc-052cd81c6009] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id f2c7463c-ed09-4601-8b3f-687bcfbf6ea1 request method POST
+2020-03-07 11:51:19.818 [http-nio-8181-exec-3] [f2c7463c-ed09-4601-8b3f-687bcfbf6ea1] DEBUG c.t.filter.TransportSecurityFilter - userId : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 11:51:19.818 [http-nio-8181-exec-3] [f2c7463c-ed09-4601-8b3f-687bcfbf6ea1] DEBUG c.t.filter.TransportSecurityFilter - role : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 11:51:19.818 [http-nio-8181-exec-3] [f2c7463c-ed09-4601-8b3f-687bcfbf6ea1] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/confirmOrder resource path http://localhost:8182/trspt/api/v1/confirmOrder
+2020-03-07 11:59:49.509 [http-nio-8181-exec-5] [875f5164-11f9-4264-9187-c047c9e18e3b] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id bf175409-8791-4457-aca6-f98b8c1cfbcd request method POST
+2020-03-07 11:59:49.509 [http-nio-8181-exec-5] [bf175409-8791-4457-aca6-f98b8c1cfbcd] DEBUG c.t.filter.TransportSecurityFilter - userId : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 11:59:49.509 [http-nio-8181-exec-5] [bf175409-8791-4457-aca6-f98b8c1cfbcd] DEBUG c.t.filter.TransportSecurityFilter - role : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
+2020-03-07 11:59:49.509 [http-nio-8181-exec-5] [bf175409-8791-4457-aca6-f98b8c1cfbcd] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/transitRequest resource path http://localhost:8182/trspt/api/v1/transitRequest
+2020-03-07 11:59:59.509 [http-nio-8181-exec-5] [bf175409-8791-4457-aca6-f98b8c1cfbcd] ERROR c.t.filter.TransportSecurityFilter - Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at okio.Okio$2.read(Okio.java:140)
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.java:355)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at com.transport.filter.TransportSecurityFilter.post(TransportSecurityFilter.java:309)
+	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:159)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2020-03-07 11:59:59.511 [http-nio-8181-exec-5] [bf175409-8791-4457-aca6-f98b8c1cfbcd] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
+2020-03-07 11:59:59.511 [http-nio-8181-exec-5] [bf175409-8791-4457-aca6-f98b8c1cfbcd] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
+2020-03-07 12:00:33.712 [http-nio-8181-exec-6] [cedcf42f-5dc2-4aa3-b1a6-8547dda84f39] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 15e1af12-bd48-4e7e-a9f3-0b16961390cb request method POST
+2020-03-07 12:00:33.712 [http-nio-8181-exec-6] [15e1af12-bd48-4e7e-a9f3-0b16961390cb] DEBUG c.t.filter.TransportSecurityFilter - userId : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 12:00:33.712 [http-nio-8181-exec-6] [15e1af12-bd48-4e7e-a9f3-0b16961390cb] DEBUG c.t.filter.TransportSecurityFilter - role : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 12:00:33.723 [http-nio-8181-exec-6] [15e1af12-bd48-4e7e-a9f3-0b16961390cb] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/confirmOrder resource path http://localhost:8182/trspt/api/v1/confirmOrder
+2020-03-07 12:37:12.581 [http-nio-8181-exec-8] [] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:428)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:684)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2020-03-07 12:37:42.698 [main] [] INFO  c.t.TransportSecurityApplication - Starting TransportSecurityApplication on DESKTOP-E99KESB with PID 13740 (C:\Users\CST\Desktop\transport\TransportNew\TransportSecurityApp\bin\main started by CST in C:\Users\CST\Desktop\transport\TransportNew\TransportSecurityApp)
+2020-03-07 12:37:42.710 [main] [] DEBUG c.t.TransportSecurityApplication - Running with Spring Boot v1.5.20.RELEASE, Spring v4.3.23.RELEASE
+2020-03-07 12:37:42.710 [main] [] INFO  c.t.TransportSecurityApplication - The following profiles are active: TEST
+2020-03-07 12:37:43.254 [main] [] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@149e0f5d: startup date [Sat Mar 07 12:37:43 IST 2020]; root of context hierarchy
+2020-03-07 12:37:43.284 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2020-03-07 12:37:47.117 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$b14eecf8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-07 12:37:47.178 [main] [] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-07 12:37:47.226 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cb727f9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-07 12:37:48.112 [main] [] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8181 (http)
+2020-03-07 12:37:48.132 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2020-03-07 12:37:48.163 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-07 12:37:48.163 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.39
+2020-03-07 12:37:48.405 [localhost-startStop-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-07 12:37:48.405 [localhost-startStop-1] [] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5153 ms
+2020-03-07 12:37:49.640 [localhost-startStop-1] [] INFO  com.zaxxer.hikari.HikariDataSource - TransportPool - Started.
+2020-03-07 12:37:56.567 [localhost-startStop-1] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-03-07 12:37:56.588 [localhost-startStop-1] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-03-07 12:37:56.697 [localhost-startStop-1] [] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2020-03-07 12:37:56.713 [localhost-startStop-1] [] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-03-07 12:37:56.713 [localhost-startStop-1] [] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2020-03-07 12:37:56.760 [localhost-startStop-1] [] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-07 12:37:57.244 [localhost-startStop-1] [] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-03-07 12:37:58.197 [localhost-startStop-1] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-07 12:37:58.601 [localhost-startStop-1] [] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-03-07 12:37:58.882 [localhost-startStop-1] [] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-07 12:37:58.882 [localhost-startStop-1] [] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2020-03-07 12:37:58.882 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-07 12:37:58.882 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-07 12:37:58.882 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-07 12:37:58.882 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-07 12:37:58.898 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'transportSecurityFilter' to: [/*]
+2020-03-07 12:37:58.929 [localhost-startStop-1] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Initialized.........
+2020-03-07 12:38:00.913 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@149e0f5d: startup date [Sat Mar 07 12:37:43 IST 2020]; root of context hierarchy
+2020-03-07 12:38:01.044 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/addVehicle],methods=[POST],produces=[application/json]}" onto private com.transport.response.VehicleRegResp com.transport.controller.KYCDocsController.addVehicle(com.transport.bean.RegisterVehicle,javax.servlet.http.HttpServletRequest) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.VehicleRegFailed,com.transport.exception.VehicleUploadFailed
+2020-03-07 12:38:01.044 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/uploadFiles],methods=[POST],produces=[application/json]}" onto public com.transport.response.TransportResponse com.transport.controller.KYCDocsController.uploadFile(org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,java.lang.String,javax.servlet.http.HttpServletRequest) throws com.transport.exception.FailedUpdateDocs
+2020-03-07 12:38:01.044 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/uploadDocs],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.KYCDocsController.uploadDocs(com.transport.bean.KYCDetails,javax.servlet.http.HttpServletRequest) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException
+2020-03-07 12:38:01.060 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/setPassword],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.TransportSecurityController.setPassword(com.transport.bean.SetPassword) throws com.transport.exception.PasswordMismatchException
+2020-03-07 12:38:01.060 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/driver/login],methods=[POST],produces=[application/json]}" onto private com.transport.response.DriverLoginResponse com.transport.controller.TransportSecurityController.driverLogin(com.transport.bean.DriverLoginReq) throws com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.InvalidMaildId,com.transport.exception.LoginFailedException,com.transport.exception.TransportDAOException,com.transport.exception.InvalidAccount,com.transport.exception.SendOTPFailed
+2020-03-07 12:38:01.060 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/validateCustomerOTP],methods=[POST],produces=[application/json]}" onto private com.transport.response.LoginResult com.transport.controller.TransportSecurityController.validateOTP(com.transport.bean.UserOTPReq) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.InvalidMaildId,com.transport.exception.ResendOTPFailed,com.transport.exception.SendOTPFailed,com.transport.exception.OTPExpiredException,com.transport.exception.InvalidOTP,com.transport.exception.TransportDAOException
+2020-03-07 12:38:01.060 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/customer/login],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.TransportSecurityController.loginCustomer(com.transport.bean.LoginRequest) throws com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.InvalidMaildId,com.transport.exception.LoginFailedException,com.transport.exception.TransportDAOException,com.transport.exception.InvalidAccount,com.transport.exception.SendOTPFailed
+2020-03-07 12:38:01.060 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/driver/register],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.TransportSecurityController.registerDriver(com.transport.model.UserRegistration) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException
+2020-03-07 12:38:01.060 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/resendOTP],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.TransportSecurityController.resendOTP(com.transport.bean.UserOTPReq) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.InvalidMaildId,com.transport.exception.ResendOTPFailed,com.transport.exception.SendOTPFailed
+2020-03-07 12:38:01.060 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/forgotPassword],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.TransportSecurityController.forgotPassword(com.transport.bean.ForgotPassword,javax.servlet.http.HttpServletRequest) throws com.transport.exception.InvalidMaildId
+2020-03-07 12:38:01.060 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/getVanDetails],methods=[GET],produces=[application/json]}" onto private com.transport.response.VanDetailsResp com.transport.controller.TransportSecurityController.getVanDetails()
+2020-03-07 12:38:01.060 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/getDistance],methods=[POST],produces=[application/json]}" onto private com.transport.response.DistanceResp com.transport.controller.TransportSecurityController.getDistance(com.transport.bean.DistanceReq) throws com.transport.exception.InvalidOrderId,java.io.IOException,com.transport.exception.InvalidLocation
+2020-03-07 12:38:01.060 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/validateDriverOTP],methods=[POST],produces=[application/json]}" onto private com.transport.response.OTPResponse com.transport.controller.TransportSecurityController.validateDriverOTP(com.transport.bean.DriverOTPReq) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.InvalidMaildId,com.transport.exception.TransportDAOException,com.transport.exception.LoginFailedException,com.transport.exception.OTPExpiredException,com.transport.exception.InvalidOTP
+2020-03-07 12:38:01.060 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-07 12:38:01.060 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-07 12:38:01.122 [main] [] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-07 12:38:01.122 [main] [] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-07 12:38:01.154 [main] [] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in transportControllAdvice
+2020-03-07 12:38:01.154 [main] [] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in repositoryRestExceptionHandler
+2020-03-07 12:38:01.263 [main] [] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-07 12:38:01.575 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@149e0f5d: startup date [Sat Mar 07 12:37:43 IST 2020]; root of context hierarchy
+2020-03-07 12:38:01.607 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResourceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-07 12:38:01.607 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[POST],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.postCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-07 12:38:01.607 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-07 12:38:01.607 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation)
+2020-03-07 12:38:01.607 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[PATCH],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.patchItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException,org.springframework.data.rest.webmvc.ResourceNotFoundException
+2020-03-07 12:38:01.607 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation)
+2020-03-07 12:38:01.607 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-07 12:38:01.607 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-07 12:38:01.607 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.deleteItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.support.ETag) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-07 12:38:01.607 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.Resource<?>> org.springframework.data.rest.webmvc.RepositoryEntityController.getItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.http.HttpHeaders) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-07 12:38:01.607 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[PUT],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.putItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-07 12:38:01.607 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String) throws java.lang.Exception
+2020-03-07 12:38:01.607 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReferenceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
+2020-03-07 12:38:01.622 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}],methods=[PATCH || PUT || POST],consumes=[application/json || application/x-spring-data-compact+json || text/uri-list],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.createPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.http.HttpMethod,org.springframework.hateoas.Resources<java.lang.Object>,java.io.Serializable,java.lang.String) throws java.lang.Exception
+2020-03-07 12:38:01.622 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReferenceId(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String) throws java.lang.Exception
+2020-03-07 12:38:01.622 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
+2020-03-07 12:38:01.622 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
+2020-03-07 12:38:01.622 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
+2020-03-07 12:38:01.622 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/x-spring-data-compact+json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.data.rest.webmvc.RepositorySearchController.executeSearchCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.http.HttpHeaders,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler)
+2020-03-07 12:38:01.622 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
+2020-03-07 12:38:01.622 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search/{search}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String)
+2020-03-07 12:38:01.622 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search/{search}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String)
+2020-03-07 12:38:01.622 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.data.rest.webmvc.RepositorySearchesResource org.springframework.data.rest.webmvc.RepositorySearchController.listSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
+2020-03-07 12:38:01.622 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.executeSearch(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.http.HttpHeaders)
+2020-03-07 12:38:01.622 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/ || ],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositoryController.optionsForRepositories()
+2020-03-07 12:38:01.638 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/ || ],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryController.headForRepositories()
+2020-03-07 12:38:01.638 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/ || ],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RepositoryLinksResource> org.springframework.data.rest.webmvc.RepositoryController.listRepositories()
+2020-03-07 12:38:01.638 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile],methods=[GET]}" onto org.springframework.http.HttpEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.ProfileController.listAllFormsOfMetadata()
+2020-03-07 12:38:01.638 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile],methods=[OPTIONS]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.ProfileController.profileOptions()
+2020-03-07 12:38:01.653 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile/{repository}],methods=[GET],produces=[application/alps+json || */*]}" onto org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RootResourceInformation> org.springframework.data.rest.webmvc.alps.AlpsController.descriptor(org.springframework.data.rest.webmvc.RootResourceInformation)
+2020-03-07 12:38:01.653 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile/{repository}],methods=[OPTIONS],produces=[application/alps+json]}" onto org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.alps.AlpsController.alpsOptions()
+2020-03-07 12:38:01.653 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile/{repository}],methods=[GET],produces=[application/schema+json]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.json.JsonSchema> org.springframework.data.rest.webmvc.RepositorySchemaController.schema(org.springframework.data.rest.webmvc.RootResourceInformation)
+2020-03-07 12:38:01.966 [main] [] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-07 12:38:01.981 [main] [] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSourceContextSource' has been autodetected for JMX exposure
+2020-03-07 12:38:01.997 [main] [] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSourceContextSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSourceContextSource,type=HikariDataSource]
+2020-03-07 12:38:02.013 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2020-03-07 12:38:02.013 [main] [] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-03-07 12:38:02.044 [main] [] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8181 (http)
+2020-03-07 12:38:02.044 [main] [] INFO  c.t.TransportSecurityApplication - Started TransportSecurityApplication in 20.212 seconds (JVM running for 20.841)
+2020-03-07 12:39:16.417 [http-nio-8181-exec-1] [] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:428)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:684)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2020-03-07 12:41:01.828 [http-nio-8181-exec-3] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-03-07 12:41:01.828 [http-nio-8181-exec-3] [] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-03-07 12:41:01.879 [http-nio-8181-exec-3] [] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 51 ms
+2020-03-07 12:41:01.907 [http-nio-8181-exec-3] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 44bb03e8-1aa2-44f5-b6c8-8df0f96f196f request method GET
+2020-03-07 12:41:01.907 [http-nio-8181-exec-3] [44bb03e8-1aa2-44f5-b6c8-8df0f96f196f] DEBUG c.t.filter.TransportSecurityFilter - userId : null
+2020-03-07 12:41:01.907 [http-nio-8181-exec-3] [44bb03e8-1aa2-44f5-b6c8-8df0f96f196f] DEBUG c.t.filter.TransportSecurityFilter - role : null
+2020-03-07 12:41:01.907 [http-nio-8181-exec-3] [44bb03e8-1aa2-44f5-b6c8-8df0f96f196f] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getWalletDetailsByStatus resource path http://localhost:8182/trspt/api/v1/getWalletDetailsByStatus
+2020-03-07 12:41:01.907 [http-nio-8181-exec-3] [44bb03e8-1aa2-44f5-b6c8-8df0f96f196f] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1018
+2020-03-07 12:41:01.907 [http-nio-8181-exec-3] [44bb03e8-1aa2-44f5-b6c8-8df0f96f196f] DEBUG c.t.filter.TransportSecurityFilter - error MessageUser id or role is required ! please try again
+2020-03-07 12:41:41.073 [http-nio-8181-exec-4] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 40a31e8d-3bb8-4a66-a98e-b078845f66d5 request method GET
+2020-03-07 12:41:41.073 [http-nio-8181-exec-4] [40a31e8d-3bb8-4a66-a98e-b078845f66d5] DEBUG c.t.filter.TransportSecurityFilter - userId : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 12:41:41.073 [http-nio-8181-exec-4] [40a31e8d-3bb8-4a66-a98e-b078845f66d5] DEBUG c.t.filter.TransportSecurityFilter - role : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 12:41:41.073 [http-nio-8181-exec-4] [40a31e8d-3bb8-4a66-a98e-b078845f66d5] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getWalletDetailsByStatus resource path http://localhost:8182/trspt/api/v1/getWalletDetailsByStatus
+2020-03-07 12:43:35.114 [http-nio-8181-exec-6] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 6005fc55-ee28-4fc7-bf80-6e0fc932ee7c request method GET
+2020-03-07 12:43:35.114 [http-nio-8181-exec-6] [6005fc55-ee28-4fc7-bf80-6e0fc932ee7c] DEBUG c.t.filter.TransportSecurityFilter - userId : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 12:43:35.114 [http-nio-8181-exec-6] [6005fc55-ee28-4fc7-bf80-6e0fc932ee7c] DEBUG c.t.filter.TransportSecurityFilter - role : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 12:43:35.114 [http-nio-8181-exec-6] [6005fc55-ee28-4fc7-bf80-6e0fc932ee7c] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getWalletDetailsByStatus resource path http://localhost:8182/trspt/api/v1/getWalletDetailsByStatus
+2020-03-07 12:44:07.832 [http-nio-8181-exec-7] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id c213c2fe-22d1-4ec5-a6b0-44c1d5f15370 request method GET
+2020-03-07 12:44:07.832 [http-nio-8181-exec-7] [c213c2fe-22d1-4ec5-a6b0-44c1d5f15370] DEBUG c.t.filter.TransportSecurityFilter - userId : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 12:44:07.833 [http-nio-8181-exec-7] [c213c2fe-22d1-4ec5-a6b0-44c1d5f15370] DEBUG c.t.filter.TransportSecurityFilter - role : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 12:44:07.833 [http-nio-8181-exec-7] [c213c2fe-22d1-4ec5-a6b0-44c1d5f15370] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getWalletDetailsByStatus resource path http://localhost:8182/trspt/api/v1/getWalletDetailsByStatus
+2020-03-07 12:45:34.871 [http-nio-8181-exec-9] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 1aae2d58-48d8-4dfc-abe7-7b1d8c0ddc0e request method GET
+2020-03-07 12:45:34.871 [http-nio-8181-exec-9] [1aae2d58-48d8-4dfc-abe7-7b1d8c0ddc0e] DEBUG c.t.filter.TransportSecurityFilter - userId : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 12:45:34.871 [http-nio-8181-exec-9] [1aae2d58-48d8-4dfc-abe7-7b1d8c0ddc0e] DEBUG c.t.filter.TransportSecurityFilter - role : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 12:45:34.871 [http-nio-8181-exec-9] [1aae2d58-48d8-4dfc-abe7-7b1d8c0ddc0e] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getWalletDetailsByStatus resource path http://localhost:8182/trspt/api/v1/getWalletDetailsByStatus
+2020-03-07 12:48:00.308 [http-nio-8181-exec-1] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 7c8f4a25-ac4e-4a6c-bb34-32a547272bcd request method POST
+2020-03-07 12:48:00.323 [http-nio-8181-exec-1] [7c8f4a25-ac4e-4a6c-bb34-32a547272bcd] DEBUG c.t.filter.TransportSecurityFilter - userId : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 12:48:00.323 [http-nio-8181-exec-1] [7c8f4a25-ac4e-4a6c-bb34-32a547272bcd] DEBUG c.t.filter.TransportSecurityFilter - role : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 12:48:00.323 [http-nio-8181-exec-1] [7c8f4a25-ac4e-4a6c-bb34-32a547272bcd] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getWalletDetailsByStatus resource path http://localhost:8182/trspt/api/v1/getWalletDetailsByStatus
+2020-03-07 12:48:12.523 [http-nio-8181-exec-2] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 70bee414-709c-45d4-88f3-a0ad7d7be444 request method POST
+2020-03-07 12:48:12.523 [http-nio-8181-exec-2] [70bee414-709c-45d4-88f3-a0ad7d7be444] DEBUG c.t.filter.TransportSecurityFilter - userId : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 12:48:12.523 [http-nio-8181-exec-2] [70bee414-709c-45d4-88f3-a0ad7d7be444] DEBUG c.t.filter.TransportSecurityFilter - role : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 12:48:12.523 [http-nio-8181-exec-2] [70bee414-709c-45d4-88f3-a0ad7d7be444] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getWalletDetailsByStatus resource path http://localhost:8182/trspt/api/v1/getWalletDetailsByStatus
+2020-03-07 12:53:06.333 [http-nio-8181-exec-4] [40a31e8d-3bb8-4a66-a98e-b078845f66d5] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 629e7f91-daa8-4c5e-95ca-340af06d0c12 request method POST
+2020-03-07 12:53:06.333 [http-nio-8181-exec-4] [629e7f91-daa8-4c5e-95ca-340af06d0c12] DEBUG c.t.filter.TransportSecurityFilter - userId : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 12:53:06.333 [http-nio-8181-exec-4] [629e7f91-daa8-4c5e-95ca-340af06d0c12] DEBUG c.t.filter.TransportSecurityFilter - role : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 12:53:06.333 [http-nio-8181-exec-4] [629e7f91-daa8-4c5e-95ca-340af06d0c12] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getWalletDetailsByStatus resource path http://localhost:8182/trspt/api/v1/getWalletDetailsByStatus
+2020-03-07 12:54:51.779 [http-nio-8181-exec-6] [6005fc55-ee28-4fc7-bf80-6e0fc932ee7c] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 273da2f5-42ba-4b9e-bc14-17a7860647e7 request method POST
+2020-03-07 12:54:51.779 [http-nio-8181-exec-6] [273da2f5-42ba-4b9e-bc14-17a7860647e7] DEBUG c.t.filter.TransportSecurityFilter - userId : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 12:54:51.779 [http-nio-8181-exec-6] [273da2f5-42ba-4b9e-bc14-17a7860647e7] DEBUG c.t.filter.TransportSecurityFilter - role : 0fe5a64b-9e79-4fb2-8cfc-a883394b6ee4
+2020-03-07 12:54:51.779 [http-nio-8181-exec-6] [273da2f5-42ba-4b9e-bc14-17a7860647e7] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getWalletDetailsByStatus resource path http://localhost:8182/trspt/api/v1/getWalletDetailsByStatus
+2020-03-07 15:12:47.015 [TransportPool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - TransportPool - Thread starvation or clock leap detected (housekeeper delta=44m18s453ms661탎799ns).
+2020-03-07 16:59:19.053 [TransportPool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - TransportPool - Thread starvation or clock leap detected (housekeeper delta=4m28s874ms301탎600ns).

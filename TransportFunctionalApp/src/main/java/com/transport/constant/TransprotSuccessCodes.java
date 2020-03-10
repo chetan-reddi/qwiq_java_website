@@ -16,4 +16,7 @@ public interface TransprotSuccessCodes {
 	public static final String PASSWORD_CHANGED_SUCCESSFULLY = "TR2012";
 	public static final String QUOTE_UPDATED_SUCCESSFULLY = "TR2013";
 	public static final String REQUEST_SENT_TO_CUSTMOER = "TR2014";
+	public static final String TICKET_UPDATED_SUCCESSFULLY = "TR2015";
+	public static final String DELETED_SUCCESSFULLY = "TR2016";
+	public static final String STATUS_UPDATED_SUCCESSFULLY = "TR2017";
 }

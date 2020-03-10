@@ -26,6 +26,7 @@ import com.transport.bean.CancellQuoteReq;
 import com.transport.bean.CompleteOrder;
 import com.transport.bean.DistanceReq;
 import com.transport.bean.EditQuote;
+import com.transport.bean.EditTicket;
 import com.transport.bean.OrderDetails;
 import com.transport.bean.PaymentSuccess;
 import com.transport.bean.QuoteDetails;
@@ -96,6 +97,7 @@ import com.transport.response.ItemResponse;
 import com.transport.response.OrderDetailsResp;
 import com.transport.response.OrderResponse;
 import com.transport.response.Orders;
+import com.transport.response.TicketResponse;
 import com.transport.response.TransportErrorResp;
 import com.transport.response.TransportResponse;
 import com.transport.response.TransportResult;
@@ -1064,6 +1066,7 @@ private void checkQuoteId(String quoteId) throws InvalidQuoteId {
 			throw new InvalidQuoteId(TransportErrorMessages.INVALID_QUOTE_ID);
 		}
 	}
+	
 	@Override
 	public TransportResponse cancellQuote(CancellQuoteReq cancelReq, HttpServletRequest httpReq) throws InvalidQuoteId, QuoteCancell {
 		TransportResponse response=new TransportResponse();
@@ -1206,17 +1209,84 @@ private void checkQuoteId(String quoteId) throws InvalidQuoteId {
 		}
 		return response;
 	}
+	
 	@Override
-	public void getTickets(HttpServletRequest httpReq) {
+	public TicketResponse getTickets(HttpServletRequest httpReq) {
 		String role=commonUtil.getUserRole(httpReq);
-		if(role.equals(EnumUserRole.CUSTOMER.getStatus()))
-		{
-			String customerRefId=commonUtil.getCustomerUserRefIdI(httpReq);
-			
+		String customerRefId = (String) httpReq.getAttribute("userId");
+		TicketResponse response=new TicketResponse();
+		System.out.print("User Id :: "+(String) httpReq.getAttribute("userId")+" Type :: "+EnumUserRole.CUSTOMER.getStatus());
+		try {
+			List<SaveTicket> ticketList=ticketRepo.findAllByUserId(customerRefId);
+	        response.setResult(ticketList);
+	        response.setError("Error");
+		}catch(Error err) {
+			response.setError("Error");
+			response.setMessage("Some thing wrong %s"+err.getMessage());
 		}
-		else if(role.equals(EnumUserRole.DRIVER.getStatus()))
-		{
-			commonUtil.getDrivrUserRefIdI(httpReq);
-		}
+		
+        return response;
 	}
+	
+	@Override
+	public TransportResponse editTicket(EditTicket editTicket, HttpServletRequest httpReq) {
+		TransportResponse response=new TransportResponse();
+		TransportResult result=new TransportResult();
+		//checkQuoteExists(editTicket.getTicketId());
+		SaveTicket ticketDetails=ticketRepo.findByTicketId(editTicket.getTicketId());
+		//checkValidUser(orderDetails.getUserRefId(),userRefId);
+		if(ticketDetails != null) {
+			ticketDetails.setTicketType(editTicket.getTicketType());
+			ticketDetails.setTicketDescription(editTicket.getTicketDescription());
+			try
+			{
+				ticketRepo.save(ticketDetails);
+				result.setCode(TransprotSuccessCodes.TICKET_UPDATED_SUCCESSFULLY);
+				result.setMessage(TransportSuccessMessages.TICKET_UPDATED_SUCCESSFULLY);
+				response.setResult(result);
+			}
+			catch(Exception ex)
+			{
+				result.setCode("TICKETFAIL");
+				result.setMessage(TransportErrorMessages.TICKET_UPDATION_FAILED);
+			}
+		}else {
+			result.setCode("TICKETFAIL");
+			result.setMessage(TransportErrorMessages.TICKET_NOT_EXIST);
+		}
+		
+		return response;
+	}
+	
+	@Override
+	public TransportResponse deleteTicket(String id, HttpServletRequest httpReq) {
+		// TODO Auto-generated method stub
+		TransportResponse response=new TransportResponse();
+		TransportResult result=new TransportResult();
+		SaveTicket ticket = ticketRepo.findByTicketId(id);
+		System.out.print(ticket);
+		if(ticket != null) {
+			ticketRepo.delete(ticket.getId());
+			result.setCode(TransprotSuccessCodes.DELETED_SUCCESSFULLY);
+			result.setMessage(TransportSuccessMessages.DELETED_SUCCESSFULLY);
+			response.setResult(result);
+		}
+		else {
+			result.setCode(TransportErrorCodes.TICKETS_ERRRO);
+			result.setMessage(TransportErrorMessages.TICKET_NOT_EXIST);
+		}
+		
+		return response;
+	}
+	
+//	private boolean checkIdExists(long id) {
+//		boolean result=ticketRepo.checkTicketIdExists(id);
+//		if(!result)
+//		{
+//			return false;
+//		}else {
+//			return true;
+//		}
+//		
+//	}
 }

@@ -14,6 +14,7 @@ import com.transport.bean.CancellQuoteReq;
 import com.transport.bean.CompleteOrder;
 import com.transport.bean.DistanceReq;
 import com.transport.bean.EditQuote;
+import com.transport.bean.EditTicket;
 import com.transport.bean.OrderDetails;
 import com.transport.bean.PaymentSuccess;
 import com.transport.bean.QuoteDetails;
@@ -44,6 +45,7 @@ import com.transport.response.EstimatedQutoeResp;
 import com.transport.response.ItemResponse;
 import com.transport.response.OrderDetailsResp;
 import com.transport.response.OrderResponse;
+import com.transport.response.TicketResponse;
 import com.transport.response.TransportResponse;
 import com.transport.response.VanDetailsResp;
 import com.transport.response.VanSizeCalculateResp;
@@ -101,6 +103,12 @@ public interface QuoteService {
 
 	TransportResponse saveTicket(SaveTicket ticketReq, HttpServletRequest httpReq) throws FailedToSaveTicketDetails;
 
-	void getTickets(HttpServletRequest httpReq);
+	TicketResponse getTickets(HttpServletRequest httpReq);
+
+	TransportResponse editTicket(EditTicket editTicket, HttpServletRequest httpReq);
+	
+	TransportResponse deleteTicket(String id, HttpServletRequest httpReq);
+
+
 
 }

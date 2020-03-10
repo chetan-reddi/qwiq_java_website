@@ -37,20 +37,13 @@ public class SaveTicket {
 	@Column(name = "assigned_description")
     private String assignedDescription;
 	@Column(name = "resolved_on")
-    private String resolvedOn;
+    private Date resolvedOn;
 	@Column(name = "resolved_description")
     private String resolvedDescription;
 	@Column(name = "edited_on")
     private String editON;
 	@Column(name = "ticket_status")
     private int ticketStatus;
-	
-	public int getRaisedBy() {
-		return raisedBy;
-	}
-	public void setRaisedBy(int raisedBy) {
-		this.raisedBy = raisedBy;
-	}
 	public Long getId() {
 		return id;
 	}
@@ -68,6 +61,12 @@ public class SaveTicket {
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+	public int getRaisedBy() {
+		return raisedBy;
+	}
+	public void setRaisedBy(int raisedBy) {
+		this.raisedBy = raisedBy;
 	}
 	public int getTicketType() {
 		return ticketType;
@@ -111,10 +110,10 @@ public class SaveTicket {
 	public void setAssignedDescription(String assignedDescription) {
 		this.assignedDescription = assignedDescription;
 	}
-	public String getResolvedOn() {
+	public Date getResolvedOn() {
 		return resolvedOn;
 	}
-	public void setResolvedOn(String resolvedOn) {
+	public void setResolvedOn(Date resolvedOn) {
 		this.resolvedOn = resolvedOn;
 	}
 	public String getResolvedDescription() {
@@ -135,6 +134,7 @@ public class SaveTicket {
 	public void setTicketStatus(int ticketStatus) {
 		this.ticketStatus = ticketStatus;
 	}
+	
 	
 	
 	

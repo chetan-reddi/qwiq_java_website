@@ -67,5 +67,6 @@ public interface TransportErrorCodes {
 	public static final String FAILED_TO_SAVE_WALLET_DETAILS = "TR1063";
 	public static final String UNABLE_TO_CANCELL_ORDER = "TR1063";
 	public static final String TICKET_SAVE_SUCCESSFULLY = "TR1064";
+	public static final String TICKETS_ERRRO = "TR1065";
 	
 }

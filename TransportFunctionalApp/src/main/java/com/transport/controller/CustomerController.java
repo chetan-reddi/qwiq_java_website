@@ -14,13 +14,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+
 import com.transport.bean.AcceptBid;
 import com.transport.bean.CalculateReq;
 import com.transport.bean.CancelOrderReq;
 import com.transport.bean.CancellQuoteReq;
 import com.transport.bean.CompleteOrder;
+import com.transport.bean.DeleteTicketReq;
 import com.transport.bean.DistanceReq;
 import com.transport.bean.EditQuote;
+import com.transport.bean.EditTicket;
 import com.transport.bean.PaymentSuccess;
 import com.transport.bean.QuoteDetails;
 import com.transport.exception.AuthenticationFailed;
@@ -50,6 +53,7 @@ import com.transport.response.DriverBidsResponse;
 import com.transport.response.EstimatedQutoeResp;
 import com.transport.response.ItemResponse;
 import com.transport.response.OrderDetailsResp;
+import com.transport.response.TicketResponse;
 import com.transport.response.TransportResponse;
 import com.transport.response.VanDetailsResp;
 import com.transport.response.VanSizeCalculateResp;
@@ -165,11 +169,23 @@ public class CustomerController {
 		 return quoteService.saveTicket(ticketReq,httpReq);
 	}
 	@RequestMapping(value="/getTicketsByUser",method=RequestMethod.GET)
-	private void getTickets(HttpServletRequest httpReq) 
+	private TicketResponse getTickets(HttpServletRequest httpReq) 
 	{
-		  quoteService.getTickets(httpReq);
+		 return quoteService.getTickets(httpReq);
 	}
 	
+	@RequestMapping(value="/editTicket",method=RequestMethod.POST)
+	private TransportResponse editTicket(@Valid @RequestBody EditTicket  editTicket,HttpServletRequest httpReq) throws InvalidQuoteId, QuoteUpdationFailed  
+	{
+		  return quoteService.editTicket(editTicket,httpReq);
+	}
+	
+	@RequestMapping(value="/deleteTicketById",method=RequestMethod.POST)		
+	private TransportResponse deleteTicketById(@Valid @RequestBody DeleteTicketReq ticket,HttpServletRequest httpReq) throws InvalidItemId, CapacityExceeds
+	{
+		System.out.print("Ticket Id :: "+ticket.getTicketId());
+		 return quoteService.deleteTicket(ticket.getTicketId(),httpReq);
+	}
 //	@RequestMapping(value="/getPartnerWalletDetails/{status}",method=RequestMethod.POST)
 //	private TransportResponse completeOrder(@RequestBody CompleteOrder req,HttpServletRequest httpReq) throws InvalidOrderId, UnableToCompleteOrder   
 //	{

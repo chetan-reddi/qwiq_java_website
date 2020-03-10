@@ -106,7 +106,9 @@ public class TransportFunctionalAPIFilter implements Filter {
 			|| path.equals("/trspt/api/v1/getWalletDetailsByStatus")
 			|| path.equals("/trspt/api/v1/saveTicket")
 			|| path.equals("/trspt/api/v1/getAllBlogs")
-
+			|| path.equals("/trspt/api/v1/getTicketsByUser")
+			|| path.equals("/trspt/api/v1/editTicket")
+			|| path.equals("/trspt/api/v1/deleteTicketById")
 			)
 		{
 		

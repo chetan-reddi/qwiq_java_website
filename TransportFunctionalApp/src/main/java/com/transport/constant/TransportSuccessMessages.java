@@ -15,4 +15,8 @@ public interface TransportSuccessMessages {
 	public static final String PAYMENT_UPDATED_SCUCCESSFULLY = "Payment status updated successfully";
 	public static final String QUOTE_UPDATED_SUCCESSFULLY = "Quote updated successfully";
 	public static final String REQUEST_SENT_TO_CUSTOMER = "Request sent to the customer";
+	public static final String TICKET_UPDATED_SUCCESSFULLY = "Ticket updated successfully";
+	public static final String TICKET_NOT_EXIST = "Ticket not exist";
+	public static final String DELETED_SUCCESSFULLY = "Deleted Successfully";
+	public static final String STATUS_UPDATED_SUCCESSFULLY = "Updates Successfully";
 }

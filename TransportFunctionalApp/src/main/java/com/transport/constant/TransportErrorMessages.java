@@ -86,5 +86,7 @@ public interface TransportErrorMessages {
 	public static final String FAILED_TO_UPDATED_DETAILS = "Failed to update details";
 	public static final String FAILED_TO_SAVED_TICKET_DETAILS = "Failed to save ticket details ! please try again";
 	public static final String TICKET_SAVE_SUCCESSFULLY = "Ticket saved successfully ";
+	public static final String TICKET_UPDATION_FAILED = "Failed to update ticket details ! please try again";
+	public static final String TICKET_NOT_EXIST = "Ticket is not Exists..";
 	
 }

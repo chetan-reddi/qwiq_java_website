@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.transport.response.BlogResponse;
 import com.transport.bean.ChangePassword;
 import com.transport.exception.FaileToChangePassword;
 import com.transport.exception.FailedToSaveDetails;
@@ -46,4 +47,10 @@ public class SettingsController {
 	{
 		 return settingsService.changePassword(changePwd,request);
 	}
+	@RequestMapping(value="/getAllBlogs",method=RequestMethod.GET)	
+	private BlogResponse getAllBlogs() 
+	{
+		return settingsService.getAllBlogs();
+	}
+	
 }

@@ -213,6 +213,7 @@ public class DriverServiceImpl implements DriverService{
 			try
 			{
 				vehicleRepo.save(details);
+				
 			}
 			catch(Exception ex)
 			{

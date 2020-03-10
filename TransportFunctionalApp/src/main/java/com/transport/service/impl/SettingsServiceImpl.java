@@ -5,6 +5,8 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.transport.model.AddBlog;
+import com.transport.response.BlogResponse;
 import com.transport.bean.ChangePassword;
 import com.transport.constant.TransportErrorCodes;
 import com.transport.constant.TransportErrorMessages;
@@ -19,6 +21,7 @@ import com.transport.repository.DriverRepo;
 import com.transport.repository.ProfileRepo;
 import com.transport.response.ProfileDet;
 import com.transport.response.ProfiledetailsResp;
+import com.transport.repository.BlogRepo;
 import com.transport.response.TransportResponse;
 import com.transport.response.TransportResult;
 import com.transport.service.SettingsService;
@@ -36,6 +39,8 @@ public class SettingsServiceImpl implements SettingsService
 	DriverRepo driverRepo;
 	@Autowired
 	PasswordHashingUtility passwordHashingUtility;
+	@Autowired
+	BlogRepo blogRepo;
 	@Override
 	public TransportResponse save(ProfileDetails profileReq, HttpServletRequest httpReq) throws FailedToSaveDetails {
 		TransportResponse response=new TransportResponse();
@@ -150,6 +155,13 @@ public class SettingsServiceImpl implements SettingsService
 			}
 			return false;
 	
+	}
+	@Override
+	public BlogResponse getAllBlogs() {
+		BlogResponse resp=new BlogResponse();
+		Iterable<AddBlog> blogDetails=blogRepo.findAll();
+		resp.setResult(blogDetails);
+		return resp;
 	}
 
 }

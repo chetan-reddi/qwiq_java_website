@@ -10,6 +10,7 @@ import com.transport.exception.FailedToSaveDetails;
 import com.transport.exception.InvalidPassword;
 import com.transport.exception.NoProfileDetails;
 import com.transport.model.ProfileDetails;
+import com.transport.response.BlogResponse;
 import com.transport.response.ProfiledetailsResp;
 import com.transport.response.TransportResponse;
 @Service
@@ -20,5 +21,7 @@ public interface SettingsService {
 	ProfiledetailsResp getProfileDetails(HttpServletRequest httpReq) throws NoProfileDetails;
 
 	TransportResponse changePassword(ChangePassword changePwd, HttpServletRequest request) throws InvalidPassword, FaileToChangePassword;
+
+	BlogResponse getAllBlogs();
 
 }

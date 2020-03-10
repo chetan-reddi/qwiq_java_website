@@ -1,125 +1,102 @@
-2020-03-09 09:19:38.176 [TransportPool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - TransportPool - Thread starvation or clock leap detected (housekeeper delta=11h5m39s641ms255µs300ns).
-2020-03-09 10:05:22.236 [main] [] INFO  c.t.TransportSecurityApplication - Starting TransportSecurityApplication on DESKTOP-E99KESB with PID 23164 (C:\Users\CST\Desktop\transport\TransportNew\TransportSecurityApp\bin\main started by CST in C:\Users\CST\Desktop\transport\TransportNew\TransportSecurityApp)
-2020-03-09 10:05:22.242 [main] [] DEBUG c.t.TransportSecurityApplication - Running with Spring Boot v1.5.20.RELEASE, Spring v4.3.23.RELEASE
-2020-03-09 10:05:22.243 [main] [] INFO  c.t.TransportSecurityApplication - The following profiles are active: TEST
-2020-03-09 10:05:22.748 [main] [] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@149e0f5d: startup date [Mon Mar 09 10:05:22 IST 2020]; root of context hierarchy
-2020-03-09 10:05:22.942 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
-2020-03-09 10:05:26.354 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$bbd27e91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-09 10:05:26.463 [main] [] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2020-03-09 10:05:26.545 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$173ab992] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-09 10:05:27.830 [main] [] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8181 (http)
-2020-03-09 10:05:27.889 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
-2020-03-09 10:05:27.982 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2020-03-09 10:05:27.983 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.39
-2020-03-09 10:05:29.994 [localhost-startStop-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2020-03-09 10:05:29.995 [localhost-startStop-1] [] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7247 ms
-2020-03-09 10:05:36.749 [localhost-startStop-1] [] INFO  com.zaxxer.hikari.HikariDataSource - TransportPool - Started.
-2020-03-09 10:05:41.067 [localhost-startStop-1] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
-2020-03-09 10:05:41.102 [localhost-startStop-1] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+2020-03-10 10:15:16.843 [main] [] INFO  c.t.TransportSecurityApplication - Starting TransportSecurityApplication on DESKTOP-29E3ESU with PID 10884 (D:\QWIQ_MOVE\qwiq_java_website\TransportSecurityApp\bin\main started by CST-LAP-006 in D:\QWIQ_MOVE\qwiq_java_website\TransportSecurityApp)
+2020-03-10 10:15:16.930 [main] [] DEBUG c.t.TransportSecurityApplication - Running with Spring Boot v1.5.20.RELEASE, Spring v4.3.23.RELEASE
+2020-03-10 10:15:16.930 [main] [] INFO  c.t.TransportSecurityApplication - The following profiles are active: TEST
+2020-03-10 10:15:18.111 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2020-03-10 10:15:18.129 [main] [] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@45b9a632: startup date [Tue Mar 10 10:15:18 IST 2020]; root of context hierarchy
+2020-03-10 10:15:22.200 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8060eef6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 10:15:22.395 [main] [] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-10 10:15:22.449 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dbc929f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 10:15:24.515 [main] [] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8181 (http)
+2020-03-10 10:15:24.584 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2020-03-10 10:15:24.700 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-10 10:15:24.701 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.39
+2020-03-10 10:15:25.254 [localhost-startStop-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-10 10:15:25.255 [localhost-startStop-1] [] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7127 ms
+2020-03-10 10:15:27.690 [localhost-startStop-1] [] INFO  com.zaxxer.hikari.HikariDataSource - TransportPool - Started.
+2020-03-10 10:15:31.658 [localhost-startStop-1] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-03-10 10:15:31.698 [localhost-startStop-1] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2020-03-09 10:05:41.293 [localhost-startStop-1] [] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
-2020-03-09 10:05:41.296 [localhost-startStop-1] [] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-2020-03-09 10:05:41.298 [localhost-startStop-1] [] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
-2020-03-09 10:05:41.400 [localhost-startStop-1] [] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2020-03-09 10:05:41.999 [localhost-startStop-1] [] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2020-03-09 10:05:43.116 [localhost-startStop-1] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-03-09 10:05:43.688 [localhost-startStop-1] [] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
-2020-03-09 10:05:44.137 [localhost-startStop-1] [] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
-2020-03-09 10:05:44.140 [localhost-startStop-1] [] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'messageDispatcherServlet' to [/services/*]
-2020-03-09 10:05:44.153 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-2020-03-09 10:05:44.155 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2020-03-09 10:05:44.156 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2020-03-09 10:05:44.156 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-2020-03-09 10:05:44.156 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'transportSecurityFilter' to: [/*]
-2020-03-09 10:05:44.226 [localhost-startStop-1] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Initialized.........
-2020-03-09 10:05:46.286 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@149e0f5d: startup date [Mon Mar 09 10:05:22 IST 2020]; root of context hierarchy
-2020-03-09 10:05:46.511 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/uploadDocs],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.KYCDocsController.uploadDocs(com.transport.bean.KYCDetails,javax.servlet.http.HttpServletRequest) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException
-2020-03-09 10:05:46.516 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/addVehicle],methods=[POST],produces=[application/json]}" onto private com.transport.response.VehicleRegResp com.transport.controller.KYCDocsController.addVehicle(com.transport.bean.RegisterVehicle,javax.servlet.http.HttpServletRequest) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.VehicleRegFailed,com.transport.exception.VehicleUploadFailed
-2020-03-09 10:05:46.517 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/uploadFiles],methods=[POST],produces=[application/json]}" onto public com.transport.response.TransportResponse com.transport.controller.KYCDocsController.uploadFile(org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,java.lang.String,javax.servlet.http.HttpServletRequest) throws com.transport.exception.FailedUpdateDocs
-2020-03-09 10:05:46.523 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/setPassword],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.TransportSecurityController.setPassword(com.transport.bean.SetPassword) throws com.transport.exception.PasswordMismatchException
-2020-03-09 10:05:46.525 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/driver/register],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.TransportSecurityController.registerDriver(com.transport.model.UserRegistration) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException
-2020-03-09 10:05:46.526 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/validateCustomerOTP],methods=[POST],produces=[application/json]}" onto private com.transport.response.LoginResult com.transport.controller.TransportSecurityController.validateOTP(com.transport.bean.UserOTPReq) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.InvalidMaildId,com.transport.exception.ResendOTPFailed,com.transport.exception.SendOTPFailed,com.transport.exception.OTPExpiredException,com.transport.exception.InvalidOTP,com.transport.exception.TransportDAOException
-2020-03-09 10:05:46.527 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/getVanDetails],methods=[GET],produces=[application/json]}" onto private com.transport.response.VanDetailsResp com.transport.controller.TransportSecurityController.getVanDetails()
-2020-03-09 10:05:46.528 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/getDistance],methods=[POST],produces=[application/json]}" onto private com.transport.response.DistanceResp com.transport.controller.TransportSecurityController.getDistance(com.transport.bean.DistanceReq) throws com.transport.exception.InvalidOrderId,java.io.IOException,com.transport.exception.InvalidLocation
-2020-03-09 10:05:46.529 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/resendOTP],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.TransportSecurityController.resendOTP(com.transport.bean.UserOTPReq) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.InvalidMaildId,com.transport.exception.ResendOTPFailed,com.transport.exception.SendOTPFailed
-2020-03-09 10:05:46.530 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/forgotPassword],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.TransportSecurityController.forgotPassword(com.transport.bean.ForgotPassword,javax.servlet.http.HttpServletRequest) throws com.transport.exception.InvalidMaildId
-2020-03-09 10:05:46.531 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/driver/login],methods=[POST],produces=[application/json]}" onto private com.transport.response.DriverLoginResponse com.transport.controller.TransportSecurityController.driverLogin(com.transport.bean.DriverLoginReq) throws com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.InvalidMaildId,com.transport.exception.LoginFailedException,com.transport.exception.TransportDAOException,com.transport.exception.InvalidAccount,com.transport.exception.SendOTPFailed
-2020-03-09 10:05:46.531 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/customer/login],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.TransportSecurityController.loginCustomer(com.transport.bean.LoginRequest) throws com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.InvalidMaildId,com.transport.exception.LoginFailedException,com.transport.exception.TransportDAOException,com.transport.exception.InvalidAccount,com.transport.exception.SendOTPFailed
-2020-03-09 10:05:46.532 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/validateDriverOTP],methods=[POST],produces=[application/json]}" onto private com.transport.response.OTPResponse com.transport.controller.TransportSecurityController.validateDriverOTP(com.transport.bean.DriverOTPReq) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.InvalidMaildId,com.transport.exception.TransportDAOException,com.transport.exception.LoginFailedException,com.transport.exception.OTPExpiredException,com.transport.exception.InvalidOTP
-2020-03-09 10:05:46.533 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/getEstimatedQuote],methods=[POST],produces=[application/json]}" onto private com.transport.response.EstimatedQutoeResp com.transport.controller.TransportSecurityController.getEstimatedQuote(com.transport.bean.QuoteDetails) throws com.transport.exception.InvalidOrderId,java.io.IOException,com.transport.exception.InvalidLocation
-2020-03-09 10:05:46.539 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2020-03-09 10:05:46.540 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2020-03-09 10:05:46.597 [main] [] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-03-09 10:05:46.598 [main] [] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-03-09 10:05:46.627 [main] [] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in transportControllAdvice
-2020-03-09 10:05:46.627 [main] [] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in repositoryRestExceptionHandler
-2020-03-09 10:05:46.752 [main] [] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-03-09 10:05:47.094 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@149e0f5d: startup date [Mon Mar 09 10:05:22 IST 2020]; root of context hierarchy
-2020-03-09 10:05:47.113 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[PUT],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.putItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException
-2020-03-09 10:05:47.114 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.Resource<?>> org.springframework.data.rest.webmvc.RepositoryEntityController.getItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.http.HttpHeaders) throws org.springframework.web.HttpRequestMethodNotSupportedException
-2020-03-09 10:05:47.115 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
-2020-03-09 10:05:47.116 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.web.HttpRequestMethodNotSupportedException
-2020-03-09 10:05:47.118 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[PATCH],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.patchItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException,org.springframework.data.rest.webmvc.ResourceNotFoundException
-2020-03-09 10:05:47.120 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.deleteItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.support.ETag) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
-2020-03-09 10:05:47.121 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation)
-2020-03-09 10:05:47.121 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[POST],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.postCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException
-2020-03-09 10:05:47.122 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResourceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
-2020-03-09 10:05:47.125 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation)
-2020-03-09 10:05:47.126 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable) throws org.springframework.web.HttpRequestMethodNotSupportedException
-2020-03-09 10:05:47.128 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReferenceId(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String) throws java.lang.Exception
-2020-03-09 10:05:47.129 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
-2020-03-09 10:05:47.131 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
-2020-03-09 10:05:47.132 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String) throws java.lang.Exception
-2020-03-09 10:05:47.132 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReferenceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
-2020-03-09 10:05:47.133 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}],methods=[PATCH || PUT || POST],consumes=[application/json || application/x-spring-data-compact+json || text/uri-list],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.createPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.http.HttpMethod,org.springframework.hateoas.Resources<java.lang.Object>,java.io.Serializable,java.lang.String) throws java.lang.Exception
-2020-03-09 10:05:47.135 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search/{search}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String)
-2020-03-09 10:05:47.135 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.data.rest.webmvc.RepositorySearchesResource org.springframework.data.rest.webmvc.RepositorySearchController.listSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
-2020-03-09 10:05:47.136 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
-2020-03-09 10:05:47.137 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search/{search}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String)
-2020-03-09 10:05:47.139 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.executeSearch(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.http.HttpHeaders)
-2020-03-09 10:05:47.142 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
-2020-03-09 10:05:47.144 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/x-spring-data-compact+json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.data.rest.webmvc.RepositorySearchController.executeSearchCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.http.HttpHeaders,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler)
-2020-03-09 10:05:47.152 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/ || ],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RepositoryLinksResource> org.springframework.data.rest.webmvc.RepositoryController.listRepositories()
-2020-03-09 10:05:47.155 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/ || ],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositoryController.optionsForRepositories()
-2020-03-09 10:05:47.159 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/ || ],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryController.headForRepositories()
-2020-03-09 10:05:47.168 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile],methods=[OPTIONS]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.ProfileController.profileOptions()
-2020-03-09 10:05:47.169 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile],methods=[GET]}" onto org.springframework.http.HttpEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.ProfileController.listAllFormsOfMetadata()
-2020-03-09 10:05:47.171 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile/{repository}],methods=[OPTIONS],produces=[application/alps+json]}" onto org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.alps.AlpsController.alpsOptions()
-2020-03-09 10:05:47.173 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile/{repository}],methods=[GET],produces=[application/alps+json || */*]}" onto org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RootResourceInformation> org.springframework.data.rest.webmvc.alps.AlpsController.descriptor(org.springframework.data.rest.webmvc.RootResourceInformation)
-2020-03-09 10:05:47.174 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile/{repository}],methods=[GET],produces=[application/schema+json]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.json.JsonSchema> org.springframework.data.rest.webmvc.RepositorySchemaController.schema(org.springframework.data.rest.webmvc.RootResourceInformation)
-2020-03-09 10:05:47.525 [main] [] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-2020-03-09 10:05:47.527 [main] [] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSourceContextSource' has been autodetected for JMX exposure
-2020-03-09 10:05:47.537 [main] [] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSourceContextSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSourceContextSource,type=HikariDataSource]
-2020-03-09 10:05:47.557 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
-2020-03-09 10:05:47.617 [main] [] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
-2020-03-09 10:05:47.672 [main] [] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8181 (http)
-2020-03-09 10:05:47.682 [main] [] INFO  c.t.TransportSecurityApplication - Started TransportSecurityApplication in 26.256 seconds (JVM running for 29.201)
-2020-03-09 10:10:31.537 [http-nio-8181-exec-1] [] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
- Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
-java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
-	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:428)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:684)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Unknown Source)
-2020-03-09 10:10:39.071 [http-nio-8181-exec-2] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
-2020-03-09 10:10:39.072 [http-nio-8181-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
-2020-03-09 10:10:39.114 [http-nio-8181-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms
-2020-03-09 10:10:39.266 [http-nio-8181-exec-2] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 8c154ae2-88d1-4d40-932f-570d97c23139 request method POST
-2020-03-09 10:10:39.266 [http-nio-8181-exec-2] [8c154ae2-88d1-4d40-932f-570d97c23139] DEBUG c.t.filter.TransportSecurityFilter - userId : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
-2020-03-09 10:10:39.266 [http-nio-8181-exec-2] [8c154ae2-88d1-4d40-932f-570d97c23139] DEBUG c.t.filter.TransportSecurityFilter - role : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
-2020-03-09 10:10:39.266 [http-nio-8181-exec-2] [8c154ae2-88d1-4d40-932f-570d97c23139] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/driver/changePassword resource path http://localhost:8182/trspt/api/v1/driver/changePassword
-2020-03-09 10:13:52.649 [http-nio-8181-exec-3] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 6c8e1e8b-1f37-4b37-aca0-42fe5404f270 request method POST
-2020-03-09 10:13:52.650 [http-nio-8181-exec-3] [6c8e1e8b-1f37-4b37-aca0-42fe5404f270] DEBUG c.t.filter.TransportSecurityFilter - userId : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
-2020-03-09 10:13:52.650 [http-nio-8181-exec-3] [6c8e1e8b-1f37-4b37-aca0-42fe5404f270] DEBUG c.t.filter.TransportSecurityFilter - role : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
-2020-03-09 10:13:52.650 [http-nio-8181-exec-3] [6c8e1e8b-1f37-4b37-aca0-42fe5404f270] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/driver/changePassword resource path http://localhost:8182/trspt/api/v1/driver/changePassword
-2020-03-09 10:14:02.658 [http-nio-8181-exec-3] [6c8e1e8b-1f37-4b37-aca0-42fe5404f270] ERROR c.t.filter.TransportSecurityFilter - Read timed out
+2020-03-10 10:15:31.888 [localhost-startStop-1] [] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2020-03-10 10:15:31.890 [localhost-startStop-1] [] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-03-10 10:15:31.892 [localhost-startStop-1] [] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2020-03-10 10:15:32.015 [localhost-startStop-1] [] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-10 10:15:32.521 [localhost-startStop-1] [] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-03-10 10:15:34.019 [localhost-startStop-1] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-10 10:15:34.630 [localhost-startStop-1] [] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-03-10 10:15:35.022 [localhost-startStop-1] [] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-10 10:15:35.024 [localhost-startStop-1] [] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2020-03-10 10:15:35.050 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-10 10:15:35.071 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-10 10:15:35.072 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-10 10:15:35.072 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-10 10:15:35.072 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'transportSecurityFilter' to: [/*]
+2020-03-10 10:15:35.143 [localhost-startStop-1] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Initialized.........
+2020-03-10 10:15:37.306 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@45b9a632: startup date [Tue Mar 10 10:15:18 IST 2020]; root of context hierarchy
+2020-03-10 10:15:37.463 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/uploadDocs],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.KYCDocsController.uploadDocs(com.transport.bean.KYCDetails,javax.servlet.http.HttpServletRequest) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException
+2020-03-10 10:15:37.467 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/addVehicle],methods=[POST],produces=[application/json]}" onto private com.transport.response.VehicleRegResp com.transport.controller.KYCDocsController.addVehicle(com.transport.bean.RegisterVehicle,javax.servlet.http.HttpServletRequest) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.VehicleRegFailed,com.transport.exception.VehicleUploadFailed
+2020-03-10 10:15:37.467 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/uploadFiles],methods=[POST],produces=[application/json]}" onto public com.transport.response.TransportResponse com.transport.controller.KYCDocsController.uploadFile(org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,java.lang.String,javax.servlet.http.HttpServletRequest) throws com.transport.exception.FailedUpdateDocs
+2020-03-10 10:15:37.473 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-10 10:15:37.473 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-10 10:15:37.535 [main] [] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-10 10:15:37.535 [main] [] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-10 10:15:37.561 [main] [] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in transportControllAdvice
+2020-03-10 10:15:37.562 [main] [] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in repositoryRestExceptionHandler
+2020-03-10 10:15:37.681 [main] [] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-10 10:15:38.152 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@45b9a632: startup date [Tue Mar 10 10:15:18 IST 2020]; root of context hierarchy
+2020-03-10 10:15:38.167 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-10 10:15:38.168 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-10 10:15:38.169 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation)
+2020-03-10 10:15:38.169 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResourceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-10 10:15:38.170 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[POST],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.postCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-10 10:15:38.170 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation)
+2020-03-10 10:15:38.170 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-10 10:15:38.171 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[PATCH],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.patchItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException,org.springframework.data.rest.webmvc.ResourceNotFoundException
+2020-03-10 10:15:38.171 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.deleteItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.support.ETag) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-10 10:15:38.172 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.Resource<?>> org.springframework.data.rest.webmvc.RepositoryEntityController.getItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.http.HttpHeaders) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-10 10:15:38.172 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[PUT],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.putItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2020-03-10 10:15:38.174 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReferenceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
+2020-03-10 10:15:38.175 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReferenceId(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String) throws java.lang.Exception
+2020-03-10 10:15:38.175 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
+2020-03-10 10:15:38.176 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
+2020-03-10 10:15:38.177 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}],methods=[PATCH || PUT || POST],consumes=[application/json || application/x-spring-data-compact+json || text/uri-list],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.createPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.http.HttpMethod,org.springframework.hateoas.Resources<java.lang.Object>,java.io.Serializable,java.lang.String) throws java.lang.Exception
+2020-03-10 10:15:38.177 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String) throws java.lang.Exception
+2020-03-10 10:15:38.178 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
+2020-03-10 10:15:38.179 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/x-spring-data-compact+json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.data.rest.webmvc.RepositorySearchController.executeSearchCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.http.HttpHeaders,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler)
+2020-03-10 10:15:38.180 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search/{search}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String)
+2020-03-10 10:15:38.181 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.data.rest.webmvc.RepositorySearchesResource org.springframework.data.rest.webmvc.RepositorySearchController.listSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
+2020-03-10 10:15:38.182 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.executeSearch(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.http.HttpHeaders)
+2020-03-10 10:15:38.182 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
+2020-03-10 10:15:38.182 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search/{search}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String)
+2020-03-10 10:15:38.183 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/ || ],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryController.headForRepositories()
+2020-03-10 10:15:38.184 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/ || ],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositoryController.optionsForRepositories()
+2020-03-10 10:15:38.184 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/ || ],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RepositoryLinksResource> org.springframework.data.rest.webmvc.RepositoryController.listRepositories()
+2020-03-10 10:15:38.188 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile],methods=[GET]}" onto org.springframework.http.HttpEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.ProfileController.listAllFormsOfMetadata()
+2020-03-10 10:15:38.189 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile],methods=[OPTIONS]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.ProfileController.profileOptions()
+2020-03-10 10:15:38.189 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile/{repository}],methods=[GET],produces=[application/alps+json || */*]}" onto org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RootResourceInformation> org.springframework.data.rest.webmvc.alps.AlpsController.descriptor(org.springframework.data.rest.webmvc.RootResourceInformation)
+2020-03-10 10:15:38.189 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile/{repository}],methods=[OPTIONS],produces=[application/alps+json]}" onto org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.alps.AlpsController.alpsOptions()
+2020-03-10 10:15:38.190 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile/{repository}],methods=[GET],produces=[application/schema+json]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.json.JsonSchema> org.springframework.data.rest.webmvc.RepositorySchemaController.schema(org.springframework.data.rest.webmvc.RootResourceInformation)
+2020-03-10 10:15:38.568 [main] [] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-03-10 10:15:38.570 [main] [] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSourceContextSource' has been autodetected for JMX exposure
+2020-03-10 10:15:38.578 [main] [] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSourceContextSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSourceContextSource,type=HikariDataSource]
+2020-03-10 10:15:38.609 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2020-03-10 10:15:38.654 [main] [] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-03-10 10:15:38.726 [main] [] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8181 (http)
+2020-03-10 10:15:38.736 [main] [] INFO  c.t.TransportSecurityApplication - Started TransportSecurityApplication in 23.683 seconds (JVM running for 26.567)
+2020-03-10 10:15:43.792 [http-nio-8181-exec-2] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-03-10 10:15:43.792 [http-nio-8181-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-03-10 10:15:43.822 [http-nio-8181-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2020-03-10 10:15:43.859 [http-nio-8181-exec-2] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 22d468c9-08fd-4c14-9c2f-b6357bc4ce38 request method GET
+2020-03-10 10:15:43.859 [http-nio-8181-exec-2] [22d468c9-08fd-4c14-9c2f-b6357bc4ce38] DEBUG c.t.filter.TransportSecurityFilter - userId : null
+2020-03-10 10:15:43.859 [http-nio-8181-exec-2] [22d468c9-08fd-4c14-9c2f-b6357bc4ce38] DEBUG c.t.filter.TransportSecurityFilter - role : null
+2020-03-10 10:15:43.859 [http-nio-8181-exec-2] [22d468c9-08fd-4c14-9c2f-b6357bc4ce38] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getAllBlogs resource path http://localhost:8182/trspt/api/v1/getAllBlogs
+2020-03-10 10:15:43.859 [http-nio-8181-exec-2] [22d468c9-08fd-4c14-9c2f-b6357bc4ce38] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1018
+2020-03-10 10:15:43.859 [http-nio-8181-exec-2] [22d468c9-08fd-4c14-9c2f-b6357bc4ce38] DEBUG c.t.filter.TransportSecurityFilter - error MessageUser id or role is required ! please try again
+2020-03-10 10:18:13.378 [http-nio-8181-exec-5] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id e771b692-2a58-4701-a204-e46aaaa5dff8 request method GET
+2020-03-10 10:18:13.379 [http-nio-8181-exec-5] [e771b692-2a58-4701-a204-e46aaaa5dff8] DEBUG c.t.filter.TransportSecurityFilter - userId : d55335cb-06e5-4d32-b813-a33becd10813
+2020-03-10 10:18:13.379 [http-nio-8181-exec-5] [e771b692-2a58-4701-a204-e46aaaa5dff8] DEBUG c.t.filter.TransportSecurityFilter - role : d55335cb-06e5-4d32-b813-a33becd10813
+2020-03-10 10:18:13.379 [http-nio-8181-exec-5] [e771b692-2a58-4701-a204-e46aaaa5dff8] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getAllBlogs resource path http://localhost:8182/trspt/api/v1/getAllBlogs
+2020-03-10 10:18:23.686 [http-nio-8181-exec-5] [e771b692-2a58-4701-a204-e46aaaa5dff8] ERROR c.t.filter.TransportSecurityFilter - Read timed out
 java.net.SocketTimeoutException: Read timed out
 	at java.net.SocketInputStream.socketRead0(Native Method)
 	at java.net.SocketInputStream.socketRead(Unknown Source)
@@ -146,8 +123,8 @@ java.net.SocketTimeoutException: Read timed out
 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
 	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
 	at okhttp3.RealCall.execute(RealCall.java:77)
-	at com.transport.filter.TransportSecurityFilter.post(TransportSecurityFilter.java:310)
-	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:160)
+	at com.transport.filter.TransportSecurityFilter.get(TransportSecurityFilter.java:282)
+	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:156)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
@@ -182,552 +159,9 @@ java.net.SocketTimeoutException: Read timed out
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Unknown Source)
-2020-03-09 10:14:02.663 [http-nio-8181-exec-3] [6c8e1e8b-1f37-4b37-aca0-42fe5404f270] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
-2020-03-09 10:14:02.664 [http-nio-8181-exec-3] [6c8e1e8b-1f37-4b37-aca0-42fe5404f270] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
-2020-03-09 10:15:58.610 [http-nio-8181-exec-6] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id aa60a58f-208a-48f7-abb0-69f2a61386b7 request method POST
-2020-03-09 10:15:58.611 [http-nio-8181-exec-6] [aa60a58f-208a-48f7-abb0-69f2a61386b7] DEBUG c.t.filter.TransportSecurityFilter - userId : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
-2020-03-09 10:15:58.611 [http-nio-8181-exec-6] [aa60a58f-208a-48f7-abb0-69f2a61386b7] DEBUG c.t.filter.TransportSecurityFilter - role : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
-2020-03-09 10:15:58.612 [http-nio-8181-exec-6] [aa60a58f-208a-48f7-abb0-69f2a61386b7] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/driver/changePassword resource path http://localhost:8182/trspt/api/v1/driver/changePassword
-2020-03-09 10:16:02.631 [http-nio-8181-exec-6] [aa60a58f-208a-48f7-abb0-69f2a61386b7] ERROR c.t.filter.TransportSecurityFilter - Failed to connect to localhost/127.0.0.1:8182
-java.net.ConnectException: Failed to connect to localhost/127.0.0.1:8182
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at com.transport.filter.TransportSecurityFilter.post(TransportSecurityFilter.java:310)
-	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:160)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-	... 53 common frames omitted
-2020-03-09 10:16:02.634 [http-nio-8181-exec-6] [aa60a58f-208a-48f7-abb0-69f2a61386b7] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
-2020-03-09 10:16:02.635 [http-nio-8181-exec-6] [aa60a58f-208a-48f7-abb0-69f2a61386b7] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
-2020-03-09 10:17:24.049 [http-nio-8181-exec-8] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 36f8f535-037f-414d-809b-baf99e54cb2a request method POST
-2020-03-09 10:17:24.050 [http-nio-8181-exec-8] [36f8f535-037f-414d-809b-baf99e54cb2a] DEBUG c.t.filter.TransportSecurityFilter - userId : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
-2020-03-09 10:17:24.050 [http-nio-8181-exec-8] [36f8f535-037f-414d-809b-baf99e54cb2a] DEBUG c.t.filter.TransportSecurityFilter - role : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
-2020-03-09 10:17:24.050 [http-nio-8181-exec-8] [36f8f535-037f-414d-809b-baf99e54cb2a] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/driver/changePassword resource path http://localhost:8182/trspt/api/v1/driver/changePassword
-2020-03-09 10:17:34.056 [http-nio-8181-exec-8] [36f8f535-037f-414d-809b-baf99e54cb2a] ERROR c.t.filter.TransportSecurityFilter - Read timed out
-java.net.SocketTimeoutException: Read timed out
-	at java.net.SocketInputStream.socketRead0(Native Method)
-	at java.net.SocketInputStream.socketRead(Unknown Source)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at okio.Okio$2.read(Okio.java:140)
-	at okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
-	at okio.RealBufferedSource.indexOf(RealBufferedSource.java:355)
-	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
-	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
-	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
-	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at com.transport.filter.TransportSecurityFilter.post(TransportSecurityFilter.java:310)
-	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:160)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Unknown Source)
-2020-03-09 10:17:34.057 [http-nio-8181-exec-8] [36f8f535-037f-414d-809b-baf99e54cb2a] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
-2020-03-09 10:17:34.058 [http-nio-8181-exec-8] [36f8f535-037f-414d-809b-baf99e54cb2a] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
-2020-03-09 10:28:30.292 [http-nio-8181-exec-10] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 146c0479-fc2c-4f8f-8104-1eb24bab51d8 request method POST
-2020-03-09 10:28:30.293 [http-nio-8181-exec-10] [146c0479-fc2c-4f8f-8104-1eb24bab51d8] DEBUG c.t.filter.TransportSecurityFilter - userId : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
-2020-03-09 10:28:30.293 [http-nio-8181-exec-10] [146c0479-fc2c-4f8f-8104-1eb24bab51d8] DEBUG c.t.filter.TransportSecurityFilter - role : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
-2020-03-09 10:28:30.293 [http-nio-8181-exec-10] [146c0479-fc2c-4f8f-8104-1eb24bab51d8] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/driver/changePassword resource path http://localhost:8182/trspt/api/v1/driver/changePassword
-2020-03-09 10:29:58.367 [http-nio-8181-exec-2] [8c154ae2-88d1-4d40-932f-570d97c23139] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 79a5ab14-be5a-4c44-9fe6-0283b11fae28 request method POST
-2020-03-09 10:29:58.368 [http-nio-8181-exec-2] [79a5ab14-be5a-4c44-9fe6-0283b11fae28] DEBUG c.t.filter.TransportSecurityFilter - userId : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
-2020-03-09 10:29:58.368 [http-nio-8181-exec-2] [79a5ab14-be5a-4c44-9fe6-0283b11fae28] DEBUG c.t.filter.TransportSecurityFilter - role : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
-2020-03-09 10:29:58.368 [http-nio-8181-exec-2] [79a5ab14-be5a-4c44-9fe6-0283b11fae28] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/driver/changePassword resource path http://localhost:8182/trspt/api/v1/driver/changePassword
-2020-03-09 10:30:08.587 [http-nio-8181-exec-2] [79a5ab14-be5a-4c44-9fe6-0283b11fae28] ERROR c.t.filter.TransportSecurityFilter - Failed to connect to localhost/0:0:0:0:0:0:0:1:8182
-java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:8182
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at com.transport.filter.TransportSecurityFilter.post(TransportSecurityFilter.java:310)
-	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:160)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-	... 53 common frames omitted
-2020-03-09 10:30:08.602 [http-nio-8181-exec-2] [79a5ab14-be5a-4c44-9fe6-0283b11fae28] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
-2020-03-09 10:30:08.603 [http-nio-8181-exec-2] [79a5ab14-be5a-4c44-9fe6-0283b11fae28] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
-2020-03-09 13:43:24.172 [TransportPool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - TransportPool - Thread starvation or clock leap detected (housekeeper delta=15m10s543ms619µs900ns).
-2020-03-09 14:10:05.190 [http-nio-8181-exec-3] [6c8e1e8b-1f37-4b37-aca0-42fe5404f270] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 8a3cedf3-5f74-4bae-818b-e5a377ed58ef request method POST
-2020-03-09 14:10:05.190 [http-nio-8181-exec-3] [8a3cedf3-5f74-4bae-818b-e5a377ed58ef] DEBUG c.t.filter.TransportSecurityFilter - userId : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
-2020-03-09 14:10:05.190 [http-nio-8181-exec-3] [8a3cedf3-5f74-4bae-818b-e5a377ed58ef] DEBUG c.t.filter.TransportSecurityFilter - role : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
-2020-03-09 14:10:05.190 [http-nio-8181-exec-3] [8a3cedf3-5f74-4bae-818b-e5a377ed58ef] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/driver/changePassword resource path http://localhost:8182/trspt/api/v1/driver/changePassword
-2020-03-09 14:10:15.692 [http-nio-8181-exec-3] [8a3cedf3-5f74-4bae-818b-e5a377ed58ef] ERROR c.t.filter.TransportSecurityFilter - Read timed out
-java.net.SocketTimeoutException: Read timed out
-	at java.net.SocketInputStream.socketRead0(Native Method)
-	at java.net.SocketInputStream.socketRead(Unknown Source)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at okio.Okio$2.read(Okio.java:140)
-	at okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
-	at okio.RealBufferedSource.indexOf(RealBufferedSource.java:355)
-	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
-	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
-	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
-	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at com.transport.filter.TransportSecurityFilter.post(TransportSecurityFilter.java:310)
-	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:160)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Unknown Source)
-2020-03-09 14:10:15.756 [http-nio-8181-exec-3] [8a3cedf3-5f74-4bae-818b-e5a377ed58ef] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
-2020-03-09 14:10:15.756 [http-nio-8181-exec-3] [8a3cedf3-5f74-4bae-818b-e5a377ed58ef] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
-2020-03-09 14:27:55.558 [http-nio-8181-exec-6] [aa60a58f-208a-48f7-abb0-69f2a61386b7] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id e7d3ddca-b7df-4e3e-be07-22cebff05bf0 request method POST
-2020-03-09 14:27:55.562 [http-nio-8181-exec-6] [e7d3ddca-b7df-4e3e-be07-22cebff05bf0] DEBUG c.t.filter.TransportSecurityFilter - userId : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
-2020-03-09 14:27:55.568 [http-nio-8181-exec-6] [e7d3ddca-b7df-4e3e-be07-22cebff05bf0] DEBUG c.t.filter.TransportSecurityFilter - role : 1f7b98ae-edde-4223-8d32-3f0f7ea4cd11
-2020-03-09 14:27:55.568 [http-nio-8181-exec-6] [e7d3ddca-b7df-4e3e-be07-22cebff05bf0] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/driver/changePassword resource path http://localhost:8182/trspt/api/v1/driver/changePassword
-2020-03-09 14:30:50.230 [http-nio-8181-exec-8] [36f8f535-037f-414d-809b-baf99e54cb2a] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 20f4e7ab-56c5-492b-82c6-f3161de03803 request method POST
-2020-03-09 14:30:50.270 [http-nio-8181-exec-8] [20f4e7ab-56c5-492b-82c6-f3161de03803] DEBUG c.t.filter.TransportSecurityFilter - userId : null
-2020-03-09 14:30:50.274 [http-nio-8181-exec-8] [20f4e7ab-56c5-492b-82c6-f3161de03803] DEBUG c.t.filter.TransportSecurityFilter - role : null
-2020-03-09 14:30:50.274 [http-nio-8181-exec-8] [20f4e7ab-56c5-492b-82c6-f3161de03803] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/driver/register resource path http://localhost:8182/trspt/api/v1/driver/register
-2020-03-09 14:31:05.829 [http-nio-8181-exec-8] [20f4e7ab-56c5-492b-82c6-f3161de03803] ERROR c.t.c.advice.TransportControllAdvice - Mail already taken ! please choose another one
-com.transport.exception.MailExistsException: Mail already taken ! please choose another one
-	at com.transport.util.CommonUtil.checkDriverMailExists(CommonUtil.java:51)
-	at com.transport.service.impl.CustomerServiceImpl.registerDriver(CustomerServiceImpl.java:280)
-	at com.transport.controller.TransportSecurityController.registerDriver(TransportSecurityController.java:79)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:854)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:765)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:127)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Unknown Source)
-2020-03-09 14:34:53.336 [http-nio-8181-exec-2] [79a5ab14-be5a-4c44-9fe6-0283b11fae28] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id f91e3b57-70c6-4949-859f-1486546f9956 request method POST
-2020-03-09 14:34:53.392 [http-nio-8181-exec-2] [f91e3b57-70c6-4949-859f-1486546f9956] DEBUG c.t.filter.TransportSecurityFilter - userId : null
-2020-03-09 14:34:53.392 [http-nio-8181-exec-2] [f91e3b57-70c6-4949-859f-1486546f9956] DEBUG c.t.filter.TransportSecurityFilter - role : null
-2020-03-09 14:34:53.405 [http-nio-8181-exec-2] [f91e3b57-70c6-4949-859f-1486546f9956] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/driver/login resource path http://localhost:8182/trspt/api/v1/driver/login
-2020-03-09 14:35:22.848 [http-nio-8181-exec-3] [8a3cedf3-5f74-4bae-818b-e5a377ed58ef] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 238b3ab9-65f7-4b84-801e-5f3bdf43e4ff request method POST
-2020-03-09 14:35:22.849 [http-nio-8181-exec-3] [238b3ab9-65f7-4b84-801e-5f3bdf43e4ff] DEBUG c.t.filter.TransportSecurityFilter - userId : null
-2020-03-09 14:35:22.849 [http-nio-8181-exec-3] [238b3ab9-65f7-4b84-801e-5f3bdf43e4ff] DEBUG c.t.filter.TransportSecurityFilter - role : null
-2020-03-09 14:35:22.849 [http-nio-8181-exec-3] [238b3ab9-65f7-4b84-801e-5f3bdf43e4ff] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/driver/login resource path http://localhost:8182/trspt/api/v1/driver/login
-2020-03-09 14:38:06.590 [main] [] INFO  c.t.TransportSecurityApplication - Starting TransportSecurityApplication on DESKTOP-E99KESB with PID 7144 (C:\Users\CST\Desktop\transport\TransportNew\TransportSecurityApp\bin\main started by CST in C:\Users\CST\Desktop\transport\TransportNew\TransportSecurityApp)
-2020-03-09 14:38:06.594 [main] [] DEBUG c.t.TransportSecurityApplication - Running with Spring Boot v1.5.20.RELEASE, Spring v4.3.23.RELEASE
-2020-03-09 14:38:06.595 [main] [] INFO  c.t.TransportSecurityApplication - The following profiles are active: TEST
-2020-03-09 14:38:07.170 [main] [] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@149e0f5d: startup date [Mon Mar 09 14:38:07 IST 2020]; root of context hierarchy
-2020-03-09 14:38:07.322 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
-2020-03-09 14:38:12.061 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$286e8ce6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-09 14:38:12.188 [main] [] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2020-03-09 14:38:12.302 [main] [] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$83d6c7e7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-09 14:38:13.827 [main] [] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8181 (http)
-2020-03-09 14:38:13.890 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
-2020-03-09 14:38:13.966 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2020-03-09 14:38:13.967 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.39
-2020-03-09 14:38:14.277 [localhost-startStop-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2020-03-09 14:38:14.277 [localhost-startStop-1] [] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7107 ms
-2020-03-09 14:38:16.150 [localhost-startStop-1] [] INFO  com.zaxxer.hikari.HikariDataSource - TransportPool - Started.
-2020-03-09 14:38:20.146 [localhost-startStop-1] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
-2020-03-09 14:38:20.194 [localhost-startStop-1] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2020-03-09 14:38:20.421 [localhost-startStop-1] [] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
-2020-03-09 14:38:20.424 [localhost-startStop-1] [] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-2020-03-09 14:38:20.426 [localhost-startStop-1] [] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
-2020-03-09 14:38:20.553 [localhost-startStop-1] [] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2020-03-09 14:38:21.209 [localhost-startStop-1] [] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2020-03-09 14:38:22.633 [localhost-startStop-1] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-03-09 14:38:23.542 [localhost-startStop-1] [] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
-2020-03-09 14:38:24.036 [localhost-startStop-1] [] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
-2020-03-09 14:38:24.041 [localhost-startStop-1] [] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'messageDispatcherServlet' to [/services/*]
-2020-03-09 14:38:24.061 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-2020-03-09 14:38:24.072 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2020-03-09 14:38:24.072 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2020-03-09 14:38:24.073 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-2020-03-09 14:38:24.073 [localhost-startStop-1] [] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'transportSecurityFilter' to: [/*]
-2020-03-09 14:38:24.136 [localhost-startStop-1] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Initialized.........
-2020-03-09 14:38:26.657 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@149e0f5d: startup date [Mon Mar 09 14:38:07 IST 2020]; root of context hierarchy
-2020-03-09 14:38:26.848 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/uploadDocs],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.KYCDocsController.uploadDocs(com.transport.bean.KYCDetails,javax.servlet.http.HttpServletRequest) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException
-2020-03-09 14:38:26.852 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/addVehicle],methods=[POST],produces=[application/json]}" onto private com.transport.response.VehicleRegResp com.transport.controller.KYCDocsController.addVehicle(com.transport.bean.RegisterVehicle,javax.servlet.http.HttpServletRequest) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.VehicleRegFailed,com.transport.exception.VehicleUploadFailed
-2020-03-09 14:38:26.853 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/uploadFiles],methods=[POST],produces=[application/json]}" onto public com.transport.response.TransportResponse com.transport.controller.KYCDocsController.uploadFile(org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,org.springframework.web.multipart.MultipartFile,java.lang.String,javax.servlet.http.HttpServletRequest) throws com.transport.exception.FailedUpdateDocs
-2020-03-09 14:38:26.859 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/setPassword],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.TransportSecurityController.setPassword(com.transport.bean.SetPassword) throws com.transport.exception.PasswordMismatchException
-2020-03-09 14:38:26.861 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/validateCustomerOTP],methods=[POST],produces=[application/json]}" onto private com.transport.response.LoginResult com.transport.controller.TransportSecurityController.validateOTP(com.transport.bean.UserOTPReq) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.InvalidMaildId,com.transport.exception.ResendOTPFailed,com.transport.exception.SendOTPFailed,com.transport.exception.OTPExpiredException,com.transport.exception.InvalidOTP,com.transport.exception.TransportDAOException
-2020-03-09 14:38:26.862 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/driver/login],methods=[POST],produces=[application/json]}" onto private com.transport.response.DriverLoginResponse com.transport.controller.TransportSecurityController.driverLogin(com.transport.bean.DriverLoginReq) throws com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.InvalidMaildId,com.transport.exception.LoginFailedException,com.transport.exception.TransportDAOException,com.transport.exception.InvalidAccount,com.transport.exception.SendOTPFailed
-2020-03-09 14:38:26.863 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/resendOTP],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.TransportSecurityController.resendOTP(com.transport.bean.UserOTPReq) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.InvalidMaildId,com.transport.exception.ResendOTPFailed,com.transport.exception.SendOTPFailed
-2020-03-09 14:38:26.864 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/getDistance],methods=[POST],produces=[application/json]}" onto private com.transport.response.DistanceResp com.transport.controller.TransportSecurityController.getDistance(com.transport.bean.DistanceReq) throws com.transport.exception.InvalidOrderId,java.io.IOException,com.transport.exception.InvalidLocation
-2020-03-09 14:38:26.865 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/driver/register],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.TransportSecurityController.registerDriver(com.transport.model.UserRegistration) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException
-2020-03-09 14:38:26.866 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/forgotPassword],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.TransportSecurityController.forgotPassword(com.transport.bean.ForgotPassword,javax.servlet.http.HttpServletRequest) throws com.transport.exception.InvalidMaildId
-2020-03-09 14:38:26.867 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/customer/login],methods=[POST],produces=[application/json]}" onto private com.transport.response.TransportResponse com.transport.controller.TransportSecurityController.loginCustomer(com.transport.bean.LoginRequest) throws com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.InvalidMaildId,com.transport.exception.LoginFailedException,com.transport.exception.TransportDAOException,com.transport.exception.InvalidAccount,com.transport.exception.SendOTPFailed
-2020-03-09 14:38:26.868 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/getVanDetails],methods=[GET],produces=[application/json]}" onto private com.transport.response.VanDetailsResp com.transport.controller.TransportSecurityController.getVanDetails()
-2020-03-09 14:38:26.869 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/validateDriverOTP],methods=[POST],produces=[application/json]}" onto private com.transport.response.OTPResponse com.transport.controller.TransportSecurityController.validateDriverOTP(com.transport.bean.DriverOTPReq) throws com.transport.exception.MailExistsException,com.transport.exception.UserNameExistsException,com.transport.exception.TransportException,com.transport.exception.InvalidMaildId,com.transport.exception.TransportDAOException,com.transport.exception.LoginFailedException,com.transport.exception.OTPExpiredException,com.transport.exception.InvalidOTP
-2020-03-09 14:38:26.871 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/trspt/api/v1/getEstimatedQuote],methods=[POST],produces=[application/json]}" onto private com.transport.response.EstimatedQutoeResp com.transport.controller.TransportSecurityController.getEstimatedQuote(com.transport.bean.QuoteDetails) throws com.transport.exception.InvalidOrderId,java.io.IOException,com.transport.exception.InvalidLocation
-2020-03-09 14:38:26.878 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2020-03-09 14:38:26.879 [main] [] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2020-03-09 14:38:26.949 [main] [] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-03-09 14:38:26.949 [main] [] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-03-09 14:38:26.986 [main] [] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in transportControllAdvice
-2020-03-09 14:38:26.986 [main] [] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in repositoryRestExceptionHandler
-2020-03-09 14:38:27.155 [main] [] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-03-09 14:38:27.626 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@149e0f5d: startup date [Mon Mar 09 14:38:07 IST 2020]; root of context hierarchy
-2020-03-09 14:38:27.647 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[PUT],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.putItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException
-2020-03-09 14:38:27.650 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.Resource<?>> org.springframework.data.rest.webmvc.RepositoryEntityController.getItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.http.HttpHeaders) throws org.springframework.web.HttpRequestMethodNotSupportedException
-2020-03-09 14:38:27.652 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
-2020-03-09 14:38:27.653 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation)
-2020-03-09 14:38:27.655 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResourceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
-2020-03-09 14:38:27.656 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable) throws org.springframework.web.HttpRequestMethodNotSupportedException
-2020-03-09 14:38:27.658 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation)
-2020-03-09 14:38:27.660 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.web.HttpRequestMethodNotSupportedException
-2020-03-09 14:38:27.661 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.deleteItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.support.ETag) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
-2020-03-09 14:38:27.663 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}],methods=[PATCH],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.patchItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException,org.springframework.data.rest.webmvc.ResourceNotFoundException
-2020-03-09 14:38:27.664 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}],methods=[POST],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.postCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException
-2020-03-09 14:38:27.667 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReferenceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
-2020-03-09 14:38:27.667 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
-2020-03-09 14:38:27.668 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
-2020-03-09 14:38:27.669 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReferenceId(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String) throws java.lang.Exception
-2020-03-09 14:38:27.671 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String) throws java.lang.Exception
-2020-03-09 14:38:27.674 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/{id}/{property}],methods=[PATCH || PUT || POST],consumes=[application/json || application/x-spring-data-compact+json || text/uri-list],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.createPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.http.HttpMethod,org.springframework.hateoas.Resources<java.lang.Object>,java.io.Serializable,java.lang.String) throws java.lang.Exception
-2020-03-09 14:38:27.676 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
-2020-03-09 14:38:27.685 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.executeSearch(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.http.HttpHeaders)
-2020-03-09 14:38:27.696 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search/{search}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String)
-2020-03-09 14:38:27.697 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search/{search}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String)
-2020-03-09 14:38:27.698 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.data.rest.webmvc.RepositorySearchesResource org.springframework.data.rest.webmvc.RepositorySearchController.listSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
-2020-03-09 14:38:27.698 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/x-spring-data-compact+json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.data.rest.webmvc.RepositorySearchController.executeSearchCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.http.HttpHeaders,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler)
-2020-03-09 14:38:27.699 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/{repository}/search],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
-2020-03-09 14:38:27.703 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/ || ],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RepositoryLinksResource> org.springframework.data.rest.webmvc.RepositoryController.listRepositories()
-2020-03-09 14:38:27.704 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/ || ],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositoryController.optionsForRepositories()
-2020-03-09 14:38:27.704 [main] [] INFO  o.s.d.r.w.RepositoryRestHandlerMapping - Mapped "{[/ || ],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryController.headForRepositories()
-2020-03-09 14:38:27.712 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile],methods=[OPTIONS]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.ProfileController.profileOptions()
-2020-03-09 14:38:27.715 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile],methods=[GET]}" onto org.springframework.http.HttpEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.ProfileController.listAllFormsOfMetadata()
-2020-03-09 14:38:27.718 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile/{repository}],methods=[GET],produces=[application/alps+json || */*]}" onto org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RootResourceInformation> org.springframework.data.rest.webmvc.alps.AlpsController.descriptor(org.springframework.data.rest.webmvc.RootResourceInformation)
-2020-03-09 14:38:27.719 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile/{repository}],methods=[OPTIONS],produces=[application/alps+json]}" onto org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.alps.AlpsController.alpsOptions()
-2020-03-09 14:38:27.723 [main] [] INFO  o.s.d.r.w.BasePathAwareHandlerMapping - Mapped "{[/profile/{repository}],methods=[GET],produces=[application/schema+json]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.json.JsonSchema> org.springframework.data.rest.webmvc.RepositorySchemaController.schema(org.springframework.data.rest.webmvc.RootResourceInformation)
-2020-03-09 14:38:28.134 [main] [] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-2020-03-09 14:38:28.136 [main] [] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSourceContextSource' has been autodetected for JMX exposure
-2020-03-09 14:38:28.149 [main] [] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSourceContextSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSourceContextSource,type=HikariDataSource]
-2020-03-09 14:38:28.174 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
-2020-03-09 14:38:28.276 [main] [] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
-2020-03-09 14:38:28.314 [main] [] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8181 (http)
-2020-03-09 14:38:28.324 [main] [] INFO  c.t.TransportSecurityApplication - Started TransportSecurityApplication in 22.684 seconds (JVM running for 23.669)
-2020-03-09 14:42:08.902 [http-nio-8181-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
-2020-03-09 14:42:08.903 [http-nio-8181-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
-2020-03-09 14:42:08.961 [http-nio-8181-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 58 ms
-2020-03-09 14:42:09.017 [http-nio-8181-exec-1] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 45ba8ee8-a660-474c-b87f-26cf129319aa request method POST
-2020-03-09 14:42:09.018 [http-nio-8181-exec-1] [45ba8ee8-a660-474c-b87f-26cf129319aa] DEBUG c.t.filter.TransportSecurityFilter - userId : null
-2020-03-09 14:42:09.018 [http-nio-8181-exec-1] [45ba8ee8-a660-474c-b87f-26cf129319aa] DEBUG c.t.filter.TransportSecurityFilter - role : null
-2020-03-09 14:42:09.018 [http-nio-8181-exec-1] [45ba8ee8-a660-474c-b87f-26cf129319aa] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/driver/login resource path http://localhost:8182/trspt/api/v1/driver/login
-2020-03-09 14:42:33.409 [http-nio-8181-exec-3] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id 6589747b-6d98-4f9b-ab9e-0b831397fdb0 request method POST
-2020-03-09 14:42:33.410 [http-nio-8181-exec-3] [6589747b-6d98-4f9b-ab9e-0b831397fdb0] DEBUG c.t.filter.TransportSecurityFilter - userId : null
-2020-03-09 14:42:33.410 [http-nio-8181-exec-3] [6589747b-6d98-4f9b-ab9e-0b831397fdb0] DEBUG c.t.filter.TransportSecurityFilter - role : null
-2020-03-09 14:42:33.411 [http-nio-8181-exec-3] [6589747b-6d98-4f9b-ab9e-0b831397fdb0] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/driver/login resource path http://localhost:8182/trspt/api/v1/driver/login
-2020-03-09 14:42:34.598 [http-nio-8181-exec-3] [6589747b-6d98-4f9b-ab9e-0b831397fdb0] ERROR c.t.c.advice.TransportControllAdvice - Your email address or password were not recognised
-com.transport.exception.InvalidAccount: Your email address or password were not recognised
-	at com.transport.service.impl.CustomerServiceImpl.driverLogin(CustomerServiceImpl.java:528)
-	at com.transport.controller.TransportSecurityController.driverLogin(TransportSecurityController.java:89)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:854)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:765)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.transport.filter.TransportSecurityFilter.doFilter(TransportSecurityFilter.java:127)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Unknown Source)
-2020-03-09 14:42:43.495 [http-nio-8181-exec-5] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id fd9f3180-9d17-4b0e-969c-50d8f24a47fe request method POST
-2020-03-09 14:42:43.496 [http-nio-8181-exec-5] [fd9f3180-9d17-4b0e-969c-50d8f24a47fe] DEBUG c.t.filter.TransportSecurityFilter - userId : null
-2020-03-09 14:42:43.496 [http-nio-8181-exec-5] [fd9f3180-9d17-4b0e-969c-50d8f24a47fe] DEBUG c.t.filter.TransportSecurityFilter - role : null
-2020-03-09 14:42:43.497 [http-nio-8181-exec-5] [fd9f3180-9d17-4b0e-969c-50d8f24a47fe] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/driver/login resource path http://localhost:8182/trspt/api/v1/driver/login
-2020-03-09 15:10:38.472 [http-nio-8181-exec-7] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id a7f0c05a-24d6-4e4c-9cb1-74aa0532fe7f request method POST
-2020-03-09 15:10:38.508 [http-nio-8181-exec-7] [a7f0c05a-24d6-4e4c-9cb1-74aa0532fe7f] DEBUG c.t.filter.TransportSecurityFilter - userId : null
-2020-03-09 15:10:38.508 [http-nio-8181-exec-7] [a7f0c05a-24d6-4e4c-9cb1-74aa0532fe7f] DEBUG c.t.filter.TransportSecurityFilter - role : null
-2020-03-09 15:10:38.508 [http-nio-8181-exec-7] [a7f0c05a-24d6-4e4c-9cb1-74aa0532fe7f] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /p2p/api/v1/isTradeExpired resource path http://localhost:8182/p2p/api/v1/isTradeExpired
-2020-03-09 15:10:38.509 [http-nio-8181-exec-7] [a7f0c05a-24d6-4e4c-9cb1-74aa0532fe7f] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1018
-2020-03-09 15:10:38.509 [http-nio-8181-exec-7] [a7f0c05a-24d6-4e4c-9cb1-74aa0532fe7f] DEBUG c.t.filter.TransportSecurityFilter - error MessageUser id or role is required ! please try again
+2020-03-10 10:18:23.687 [http-nio-8181-exec-5] [e771b692-2a58-4701-a204-e46aaaa5dff8] DEBUG c.t.filter.TransportSecurityFilter - error codeTR1001
+2020-03-10 10:18:23.687 [http-nio-8181-exec-5] [e771b692-2a58-4701-a204-e46aaaa5dff8] DEBUG c.t.filter.TransportSecurityFilter - error MessageYour request is unsuccessful !
+2020-03-10 10:18:51.795 [http-nio-8181-exec-6] [] INFO  c.t.filter.TransportSecurityFilter - TransportSecurityFilter : Transport transaction initiated with Transaction Id a50ca05a-0c7a-46d6-a563-80b44ccbed58 request method GET
+2020-03-10 10:18:51.795 [http-nio-8181-exec-6] [a50ca05a-0c7a-46d6-a563-80b44ccbed58] DEBUG c.t.filter.TransportSecurityFilter - userId : d55335cb-06e5-4d32-b813-a33becd10813
+2020-03-10 10:18:51.796 [http-nio-8181-exec-6] [a50ca05a-0c7a-46d6-a563-80b44ccbed58] DEBUG c.t.filter.TransportSecurityFilter - role : d55335cb-06e5-4d32-b813-a33becd10813
+2020-03-10 10:18:51.796 [http-nio-8181-exec-6] [a50ca05a-0c7a-46d6-a563-80b44ccbed58] INFO  c.t.filter.TransportSecurityFilter - Transport Security filter : path /trspt/api/v1/getAllBlogs resource path http://localhost:8182/trspt/api/v1/getAllBlogs
